@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Sesiones de hoy ({{ today }})</h1>
+
+{% if sessions %}
+<table>
+  <thead><tr><th>Hora</th><th>Curso</th><th>Grupo</th><th>Aula</th><th></th></tr></thead>
+  <tbody>
+  {% for s in sessions %}
+    <tr>
+      <td>{{ s.start_datetime|date:"H:i" }}</td>
+      <td>{{ s.course.name }}</td>
+      <td>{{ s.group.section }}</td>
+      <td>{{ s.room }}</td>
+      <td><a href="{% url 'attendance:checkin' s.id %}">Tomar asistencia</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p>No tienes sesiones programadas hoy.</p>
+{% endif %}
+{% endblock %}

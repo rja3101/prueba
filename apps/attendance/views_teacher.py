@@ -1,13 +1,23 @@
-from django.contrib.auth.decorators import login_required, user_passes_test
-from django.shortcuts import render
+# apps/attendance/views_teacher.py
 from django.utils import timezone
-from .models import Session
-def is_teacher(u): return hasattr(u,"role") and u.role and u.role.name=="Docente"
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import render
+from datetime import date
 
-@login_required @user_passes_test(is_teacher)
+# TODO: ajusta import según tus modelos reales
+from .models import Session  # fields esperados: start_datetime, group, room, course, teacher
+
+@login_required
 def today_sessions(request):
-    today = timezone.localdate()
-    qs = (Session.objects.select_related("schedule","schedule__course_group","schedule__course_group__course")
-          .filter(schedule__course_group__course__teacher=request.user, date=today)
-          .order_by("schedule__start_time"))
-    return render(request,"teacher/today_sessions.html",{"sessions":qs,"today":today})
+    """Lista las sesiones de HOY para el docente autenticado."""
+    tz_now = timezone.localtime()
+    today = tz_now.date()
+    # Si tu modelo usa 'date' + 'start_time', cambia el filtro.
+    sessions = (
+        Session.objects
+        .filter(teacher=request.user, start_datetime__date=today)
+        .select_related("group", "course")  # ajusta a tus FKs reales
+        .order_by("start_datetime")
+    )
+    ctx = {"today": today, "sessions": sessions}
+    return render(request, "teacher/today_sessions.html", ctx)

@@ -1,9 +1,12 @@
+# apps/academics/urls.py
 from django.urls import path
 from .views_enrollment_cart import offerings, cart_view, cart_add, cart_remove, cart_confirm
 from .views_import import import_students, import_enrollments
 from .views_reports import occupancy_report, occupancy_csv
-from .views_grades import import_grades, grades_csv
-from .views_stats import group_stats_view
+from .views_grades import import_grades, grades_csv   # <- grades_csv lo agregamos abajo
+from .views_stats import group_stats_view              # <- nombre EXACTO al tuyo
+
+app_name = "academics"
 
 urlpatterns = [
     path("offerings/", offerings, name="academics_offerings"),

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Estadísticas del grupo • {{ group.course.name }} – {{ group.section }}</h1>
+
+{% if overall %}
+<p><strong>Promedio global:</strong> {{ overall|floatformat:2 }}</p>
+{% else %}
+<p>No hay notas aún.</p>
+{% endif %}
+
+{% if attendance_pct != None %}
+<p><strong>Asistencia:</strong> {{ attendance_pct|floatformat:1 }}%</p>
+{% endif %}
+
+<h2>Promedio por evaluación</h2>
+<table>
+  <thead><tr><th>Evaluación</th><th>Promedio</th><th>N</th></tr></thead>
+  <tbody>
+  {% for row in by_assessment %}
+    <tr>
+      <td>{{ row.assessment__name }}</td>
+      <td>{{ row.avg|floatformat:2 }}</td>
+      <td>{{ row.n }}</td>
+    </tr>
+  {% empty %}
+    <tr><td colspan="3"><em>Sin datos</em></td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

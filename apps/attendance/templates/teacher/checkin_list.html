@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Asistencia • {{ session.course.name }} – {{ session.group.section }}</h1>
+<p>{{ session.start_datetime|date:"d/m/Y H:i" }}</p>
+
+<table>
+  <thead><tr><th>Estudiante</th><th>Estado</th><th>Marcar</th></tr></thead>
+  <tbody>
+  {% for e in enrollments %}
+    {% with ar=existing|get_item:e.student.id %}
+    <tr>
+      <td>{{ e.student.get_full_name|default:e.student.username }}</td>
+      <td>{% if ar %}{{ ar.status }}{% else %}<em>sin marcar</em>{% endif %}</td>
+      <td>
+        <form method="post" style="display:inline">{% csrf_token %}
+          <input type="hidden" name="student_id" value="{{ e.student.id }}">
+          <button name="status" value="present">Presente</button>
+          <button name="status" value="late">Tarde</button>
+          <button name="status" value="absent">Ausente</button>
+        </form>
+      </td>
+    </tr>
+    {% endwith %}
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

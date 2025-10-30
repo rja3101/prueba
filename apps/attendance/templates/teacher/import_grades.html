@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Importar notas • {{ group.course.name }} – {{ group.section }}</h1>
+<p>Formato CSV con cabecera: <code>student_id,assessment_name,value</code></p>
+
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <input type="file" name="file" accept=".csv" required>
+  <button type="submit">Subir</button>
+</form>
+{% endblock %}

@@ -1,20 +1,47 @@
-from django.contrib.auth.decorators import login_required, user_passes_test
-from django.shortcuts import redirect, get_object_or_404
-from django.contrib import messages
+# apps/attendance/views_checkin.py
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
-from .models import Session, Attendance
-def is_teacher(u): return hasattr(u,"role") and u.role and u.role.name=="Docente"
-TOL_MINUTES = 15
+from django.http import HttpResponseBadRequest
 
-@login_required @user_passes_test(is_teacher)
-def check_in(request, session_id:int):
-    if request.method != "POST": return redirect("teacher_today")
-    s = get_object_or_404(Session.objects.select_related("schedule"), pk=session_id)
-    now = timezone.now()
-    start_dt = timezone.make_aware(timezone.datetime.combine(s.date, s.schedule.start_time))
-    if now > start_dt + timezone.timedelta(minutes=TOL_MINUTES):
-        messages.error(request,"Fuera de la ventana de tolerancia."); return redirect("teacher_today")
-    ip = request.META.get("REMOTE_ADDR","0.0.0.0")
-    Attendance.objects.get_or_create(session=s, student=request.user, defaults={"ip_address":ip, "entry_time":now})
-    messages.success(request, "Asistencia registrada.")
-    return redirect("teacher_today")
+# TODO: ajusta import según tus modelos reales
+from .models import Session, AttendanceRecord  # AttendanceRecord: session, student, status, timestamp
+from academics.models import Enrollment  # Enrollment: student, group
+
+@login_required
+def checkin_list(request, session_id: int):
+    """Pantalla para marcar asistencia de una sesión (lista de matriculados en el grupo)."""
+    session = get_object_or_404(Session, id=session_id, teacher=request.user)
+    # Trae estudiantes del grupo de la sesión
+    enrollments = (
+        Enrollment.objects
+        .filter(group=session.group)
+        .select_related("student")
+        .order_by("student__last_name", "student__first_name")
+    )
+
+    # Mapa rápido de asistencias existentes
+    existing = {
+        (ar.student_id): ar
+        for ar in AttendanceRecord.objects.filter(session=session).select_related("student")
+    }
+
+    if request.method == "POST":
+        student_id = request.POST.get("student_id")
+        status = request.POST.get("status")  # "present", "late", "absent"
+        if not student_id or status not in {"present", "late", "absent"}:
+            return HttpResponseBadRequest("Datos inválidos")
+
+        ar, _created = AttendanceRecord.objects.update_or_create(
+            session=session,
+            student_id=student_id,
+            defaults={"status": status, "timestamp": timezone.now()},
+        )
+        return redirect("attendance:checkin", session_id=session.id)
+
+    ctx = {
+        "session": session,
+        "enrollments": enrollments,
+        "existing": existing,
+    }
+    return render(request, "teacher/checkin_list.html", ctx)
