@@ -4,13 +4,16 @@ from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render, get_object_or_404
 from .models import CourseGroup, Grade
 
-@login_required
+@login_required(login_url="/accounts/login/")
 def academics_index(request):
     """
     Página de inicio del módulo Académico:
     - Lista todos los grupos/secciones con conteo de matriculados.
     - Accesos a estadísticas (HTML) y exportar notas (CSV).
     """
+    # DEBUG (puedes comentar estas 2 líneas cuando todo quede ok)
+    print("DEBUG user:", request.user.username, "auth:", request.user.is_authenticated)
+
     groups = (
         CourseGroup.objects
         .select_related("course", "course__teacher")
@@ -19,10 +22,10 @@ def academics_index(request):
     return render(request, "academics/index.html", {"groups": groups})
 
 # --- Estadísticas en JSON (prom, máx, mín) ---
-@login_required
+@login_required(login_url="/accounts/login/")
 def coursegroup_stats(request, group_id: int):
     cg = get_object_or_404(CourseGroup.objects.select_related("course"), pk=group_id)
-    enrolled = cg.enrolled_count
+    enrolled = getattr(cg, "enrolled_count", 0)
     stats = (
         Grade.objects.filter(assessment__course_group=cg)
         .aggregate(avg=Avg("score"), mx=Max("score"), mn=Min("score"))
@@ -39,10 +42,10 @@ def coursegroup_stats(request, group_id: int):
     })
 
 # --- Página HTML con gráfico de barras ---
-@login_required
+@login_required(login_url="/accounts/login/")
 def group_stats_view(request, group_id: int):
     cg = get_object_or_404(CourseGroup.objects.select_related("course"), pk=group_id)
-    enrolled = cg.enrolled_count
+    enrolled = getattr(cg, "enrolled_count", 0)
     stats = Grade.objects.filter(assessment__course_group=cg).aggregate(
         avg=Avg("score"), mx=Max("score"), mn=Min("score")
     )
@@ -57,14 +60,14 @@ def group_stats_view(request, group_id: int):
     ctx = {
         "course_group": cg,
         "enrolled": enrolled,
-        "stats": stats,
+        "stats": {"avg": float(stats["avg"] or 0), "mx": float(stats["mx"] or 0), "mn": float(stats["mn"] or 0)},
         "labels": labels,
         "scores": scores,
     }
     return render(request, "academics/group_stats.html", ctx)
 
 # --- Desempeño del alumno logueado (JSON) ---
-@login_required
+@login_required(login_url="/accounts/login/")
 def my_performance(request):
     qs = (
         Grade.objects
@@ -86,7 +89,7 @@ def my_performance(request):
     return JsonResponse(resumen)
 
 # --- Exportar notas del grupo a CSV ---
-@login_required
+@login_required(login_url="/accounts/login/")
 def export_group_grades_csv(request, group_id: int):
     """
     Exporta a CSV las notas del grupo (una fila por (alumno, evaluación)).
@@ -100,7 +103,6 @@ def export_group_grades_csv(request, group_id: int):
         .order_by("student__username", "assessment__title")
     )
 
-    # Construir CSV en memoria
     lines = ["username,curso,seccion,evaluacion,score"]
     for g in rows:
         uname = g.student.username.replace(",", " ")
