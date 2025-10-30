@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Académico{% endblock %}
+{% block content %}
+<h2>Mis Grupos / Secciones</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Curso</th>
+      <th>Sección</th>
+      <th>Docente</th>
+      <th>Capacidad</th>
+      <th>Matriculados</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for g in groups %}
+      <tr>
+        <td>{{ g.course.code }} — {{ g.course.name }}</td>
+        <td>{{ g.section }}{% if g.is_lab %} (LAB){% endif %}</td>
+        <td>{{ g.course.teacher.username }}</td>
+        <td>{{ g.capacity }}</td>
+        <td>{{ g.enrolled_count }}</td>
+        <td style="display:flex; gap:.5rem; flex-wrap:wrap;">
+          <a class="btn btn-sm btn-outline-primary"
+             href="/academics/group/{{ g.id }}/stats/view/">
+            Ver estadísticas
+          </a>
+          <a class="btn btn-sm btn-outline-secondary"
+             href="/admin/academics/grade/?assessment__course_group__id__exact={{ g.id }}">
+            Notas (admin)
+          </a>
+          <a class="btn btn-sm btn-outline-success"
+             href="/academics/group/{{ g.id }}/grades.csv">
+            Exportar CSV
+          </a>
+        </td>
+      </tr>
+    {% empty %}
+      <tr><td colspan="6">No hay grupos aún. Crea cursos y secciones en /admin.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

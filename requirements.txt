@@ -1,0 +1,7 @@
+django>=5.0
+mysqlclient
+django-environ
+pandas
+django-import-export
+openpyxl
+plotly

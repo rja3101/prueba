@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Estadísticas — {{ course_group }}{% endblock %}
+{% block content %}
+<h2>Estadísticas — {{ course_group }}</h2>
+<p>Matriculados: <strong>{{ enrolled }}</strong></p>
+<ul>
+  <li>Promedio: {{ stats.avg|floatformat:2 }}</li>
+  <li>Máximo: {{ stats.mx|floatformat:2 }}</li>
+  <li>Mínimo: {{ stats.mn|floatformat:2 }}</li>
+</ul>
+<div id="chart" style="height:400px;"></div>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<script>
+const labels = {{ labels|safe }};
+const scores = {{ scores|safe }};
+Plotly.newPlot('chart', [{ x: labels, y: scores, type: 'bar', name:'Notas' }], { margin: {t:20} });
+</script>
+{% endblock %}
