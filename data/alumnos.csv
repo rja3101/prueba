@@ -1,0 +1,342 @@
+username,email,first_name,last_name,role,password,is_staff,is_superuser,is_active,cui,inicio,ap_paterno,ap_materno,nombres
+20233590,dabensur@unsa.edu.pe,Diego Daniel,Abensur Romero,Alumno,123,False,False,True,20233590,2023,Abensur,Romero,Diego Daniel
+20223093,cagostinelli@unsa.edu.pe,Claudia Victoria,Agostinelli Cordova,Alumno,123,False,False,True,20223093,2022,Agostinelli,Cordova,Claudia Victoria
+20232284,dalcazar@unsa.edu.pe,Diogo André,Alcazar Medina,Alumno,123,False,False,True,20232284,2023,Alcazar,Medina,Diogo André
+20232283,jalfarob@unsa.edu.pe,Jesus Alberto,Alfaro Buiza,Alumno,123,False,False,True,20232283,2023,Alfaro,Buiza,Jesus Alberto
+20230573,jalvac@unsa.edu.pe,Jose Javier,Alva Cornejo,Alumno,123,False,False,True,20230573,2023,Alva,Cornejo,Jose Javier
+20204685,jalvarezas@unsa.edu.pe,Jheeremy Manuel,Alvarez Astete,Alumno,123,False,False,True,20204685,2020,Alvarez,Astete,Jheeremy Manuel
+20210690,dapazaan@unsa.edu.pe,Diego Francisco,Apaza Andaluz,Alumno,123,False,False,True,20210690,2021,Apaza,Andaluz,Diego Francisco
+20190652,napazaa@unsa.edu.pe,Nelzon Jorge,Apaza Apaza,Alumno,123,False,False,True,20190652,2019,Apaza,Apaza,Nelzon Jorge
+20193254,jhapazac@unsa.edu.pe,Jhon Anthony,Apaza Condori,Alumno,123,False,False,True,20193254,2019,Apaza,Condori,Jhon Anthony
+20180685,aapazaquis@unsa.edu.pe,Angel Abraham,Apaza Quispe,Alumno,123,False,False,True,20180685,2020,Apaza,Quispe,Angel Abraham
+20200735,aaquinom@unsa.edu.pe,Ana Karina,Aquino Mamani,Alumno,123,False,False,True,20200735,2020,Aquino,Mamani,Ana Karina
+20200723,daquino@unsa.edu.pe,Diego Josue,Aquino Quispe,Alumno,123,False,False,True,20200723,2020,Aquino,Quispe,Diego Josue
+20190740,aaronij@unsa.edu.pe,Antony Olmer,Aroni Jarata,Alumno,123,False,False,True,20190740,2019,Aroni,Jarata,Antony Olmer
+20220726,jarphim@unsa.edu.pe,Juan Carlos,Arphi Medina,Alumno,123,False,False,True,20220726,2022,Arphi,Medina,Juan Carlos
+20180686,larredondo@unsa.edu.pe,Luis Alonzo,Arredondo Paja,Alumno,123,False,False,True,20180686,2021,Arredondo,Paja,Luis Alonzo
+20131661,fbarrionuevop@unsa.edu.pe,Fabricio Jose,Barrionuevo Paredes,Alumno,123,False,False,True,20131661,2019,Barrionuevo,Paredes,Fabricio Jose
+20123493,sbarrios@unsa.edu.pe,Selene,Barrios Cornejo,Alumno,123,False,False,True,20123493,2021,Barrios,Cornejo,Selene
+20110752,cbautistal@unsa.edu.pe,Carlos Argelio,Bautista Lopez,Alumno,123,False,False,True,20110752,2019,Bautista,Lopez,Carlos Argelio
+20181741,abedregalv@unsa.edu.pe,Adrian Rolando,Bedregal Vento,Alumno,123,False,False,True,20181741,2019,Bedregal,Vento,Adrian Rolando
+20162006,abejar@unsa.edu.pe,Angel Andres,Bejar Merma,Alumno,123,False,False,True,20162006,2019,Bejar,Merma,Angel Andres
+20204684,ebejarr@unsa.edu.pe,Edson Bryan,Bejar Roman,Alumno,123,False,False,True,20204684,2020,Bejar,Roman,Edson Bryan
+20200731,kbejarr@unsa.edu.pe,Katherine Nikole,Bejar Roman,Alumno,123,False,False,True,20200731,2020,Bejar,Roman,Katherine Nikole
+20213142,pbenaventea@unsa.edu.pe,Paolo Daniel,Benavente Aguirre,Alumno,123,False,False,True,20213142,2021,Benavente,Aguirre,Paolo Daniel
+20213136,dbenegasl@unsa.edu.pe,Daniel Alejandro,Benegas Limache,Alumno,123,False,False,True,20213136,2021,Benegas,Limache,Daniel Alejandro
+20224273,jblancoar@unsa.edu.pe,Jose Luis,Blanco Arrisueño,Alumno,123,False,False,True,20224273,2022,Blanco,Arrisueño,Jose Luis
+20200719,ablancoc@unsa.edu.pe,Albert Gussepe,Blanco Cana,Alumno,123,False,False,True,20200719,2020,Blanco,Cana,Albert Gussepe
+20130944,kborjav@unsa.edu.pe,Kenny David,Borja Valencia,Alumno,123,False,False,True,20130944,2020,Borja,Valencia,Kenny David
+20180678,lbustamantet@unsa.edu.pe,Luis Angel,Bustamante Torres,Alumno,123,False,False,True,20180678,2019,Bustamante,Torres,Luis Angel
+20123377,abustinzaco@unsa.edu.pe,Alejandra Pamela,Bustinza Cornejo,Alumno,123,False,False,True,20123377,2023,Bustinza,Cornejo,Alejandra Pamela
+20204682,jcacerescu@unsa.edu.pe,Jayan Michael,Caceres Cuba,Alumno,123,False,False,True,20204682,2020,Caceres,Cuba,Jayan Michael
+20213145,jcacsire@unsa.edu.pe,Jhosep Angel,Cacsire Sanchez,Alumno,123,False,False,True,20213145,2021,Cacsire,Sanchez,Jhosep Angel
+20222141,mcahuanan@unsa.edu.pe,Melany Maria Cristina,Cahuana Nina,Alumno,123,False,False,True,20222141,2022,Cahuana,Nina,Melany Maria Cristina
+20231537,scalcinamu@unsa.edu.pe,Sergio Eliseo,Calcina Muchica,Alumno,123,False,False,True,20231537,2023,Calcina,Muchica,Sergio Eliseo
+20132937,ecalderoncar@unsa.edu.pe,Eder Alberto,Calderon Carrizales,Alumno,123,False,False,True,20132937,2021,Calderon,Carrizales,Eder Alberto
+20233598,jcalizayaq@unsa.edu.pe,Jose Luis,Calizaya Quispe,Alumno,123,False,False,True,20233598,2023,Calizaya,Quispe,Jose Luis
+20222178,acanapatana@unsa.edu.pe,Alex Enrique,Cañapataña Vargas,Alumno,123,False,False,True,20222178,2022,Cañapataña,Vargas,Alex Enrique
+20202231,acanol@unsa.edu.pe,Alvaro Sergio,Cano Luque,Alumno,123,False,False,True,20202231,2020,Cano,Luque,Alvaro Sergio
+20190755,acarazas@unsa.edu.pe,Alessander Jesus,Carazas Quispe,Alumno,123,False,False,True,20190755,2019,Carazas,Quispe,Alessander Jesus
+20222145,pcardenasvi@unsa.edu.pe,Piero Adriano,Cardenas Villagomez,Alumno,123,False,False,True,20222145,2022,Cardenas,Villagomez,Piero Adriano
+20153701,acarhuash@unsa.edu.pe,Arodi Sotil,Carhuas Heredia,Alumno,123,False,False,True,20153701,2021,Carhuas,Heredia,Arodi Sotil
+20222179,jcarial@unsa.edu.pe,Jose Rodrigo,Cari Almiron,Alumno,123,False,False,True,20222179,2022,Cari,Almiron,Jose Rodrigo
+20213148,acarpioch@unsa.edu.pe,Anderson Samuel,Carpio Chura,Alumno,123,False,False,True,20213148,2021,Carpio,Chura,Anderson Samuel
+20230576,ccarpiomo@unsa.edu.pe,Camila,Carpio Mollo,Alumno,123,False,False,True,20230576,2023,Carpio,Mollo,Camila
+20083194,acarrascoq@unsa.edu.pe,Andres,Carrasco Quispe,Alumno,123,False,False,True,20083194,2021,Carrasco,Quispe,Andres
+20190762,tcary@unsa.edu.pe,Tomas Gabriel,Cary Bernal,Alumno,123,False,False,True,20190762,2019,Cary,Bernal,Tomas Gabriel
+20200718,mcasaverde@unsa.edu.pe,Moises Alejandro,Casaverde Aleman,Alumno,123,False,False,True,20200718,2020,Casaverde,Aleman,Moises Alejandro
+20233582,jcasteloc@unsa.edu.pe,Joaquin Andreé,Castelo Choque,Alumno,123,False,False,True,20233582,2023,Castelo,Choque,Joaquin Andreé
+20153707,kcastillo@unsa.edu.pe,Kemely Francis,Castillo Caccire,Alumno,123,False,False,True,20153707,2022,Castillo,Caccire,Kemely Francis
+20222149,lcastillol@unsa.edu.pe,Lizardo Manuel,Castillo Llaza,Alumno,123,False,False,True,20222149,2022,Castillo,Llaza,Lizardo Manuel
+20182910,pcastillor@unsa.edu.pe,Pedro Luis,Castillo Ravelo,Alumno,123,False,False,True,20182910,2018,Castillo,Ravelo,Pedro Luis
+20180102,scastillos@unsa.edu.pe,Sergio Ahmed,Castillo Sancho,Alumno,123,False,False,True,20180102,2021,Castillo,Sancho,Sergio Ahmed
+20200738,lcastillonu@unsa.edu.pe,Levi Joel,Castillon Urquiza,Alumno,123,False,False,True,20200738,2020,Castillon,Urquiza,Levi Joel
+20204688,jcastrobar@unsa.edu.pe,Juan Carlos,Castro Barreda,Alumno,123,False,False,True,20204688,2020,Castro,Barreda,Juan Carlos
+20232281,ycauna@unsa.edu.pe,Yuri Gabriel,Cauna Quicaño,Alumno,123,False,False,True,20232281,2023,Cauna,Quicaño,Yuri Gabriel
+20213141,dcayllahuag@unsa.edu.pe,Diego Yampier,Cayllahua Gutierrez,Alumno,123,False,False,True,20213141,2021,Cayllahua,Gutierrez,Diego Yampier
+20220732,ccayrov@unsa.edu.pe,Christofer Jhonatan,Cayro Vidangos,Alumno,123,False,False,True,20220732,2022,Cayro,Vidangos,Christofer Jhonatan
+20173456,lccalluchi@unsa.edu.pe,Luis Alberto,Ccalluchi Lopez,Alumno,123,False,False,True,20173456,2019,Ccalluchi,Lopez,Luis Alberto
+20211821,gccamam@unsa.edu.pe,Gustavo Alonso,Ccama Marron,Alumno,123,False,False,True,20211821,2021,Ccama,Marron,Gustavo Alonso
+20161791,jccariq@unsa.edu.pe,Jose Carlos,Ccari Quispe,Alumno,123,False,False,True,20161791,2019,Ccari,Quispe,Jose Carlos
+20213138,accolqueq@unsa.edu.pe,Anthony Criz,Ccolque Quispe,Alumno,123,False,False,True,20213138,2021,Ccolque,Quispe,Anthony Criz
+20210688,rcerpa@unsa.edu.pe,Randu Jean Franco,Cerpa Garcia,Alumno,123,False,False,True,20210688,2021,Cerpa,Garcia,Randu Jean Franco
+20213139,rchallcom@unsa.edu.pe,Rodrigo Gonzalo,Challco Mayta,Alumno,123,False,False,True,20213139,2021,Challco,Mayta,Rodrigo Gonzalo
+20222153,bchambia@unsa.edu.pe,Brayan Joaquin,Chambi Aquino,Alumno,123,False,False,True,20222153,2022,Chambi,Aquino,Brayan Joaquin
+20200556,kchambit@unsa.edu.pe,Kevin Joaquin,Chambi Tapia,Alumno,123,False,False,True,20200556,2020,Chambi,Tapia,Kevin Joaquin
+20202228,schambiyt@unsa.edu.pe,Samuel Felipe Maximiliano,Chambi Ytusaca,Alumno,123,False,False,True,20202228,2020,Chambi,Ytusaca,Samuel Felipe Maximiliano
+20211822,jchancayauris@unsa.edu.pe,Jesus Bruno,Chancayauri Soncco,Alumno,123,False,False,True,20211822,2021,Chancayauri,Soncco,Jesus Bruno
+20082766,fchara@unsa.edu.pe,Fernando,Chara Chunga,Alumno,123,False,False,True,20082766,2019,Chara,Chunga,Fernando
+20182905,jchavezgue@unsa.edu.pe,Jean Pierre,Chavez Guevara,Alumno,123,False,False,True,20182905,2022,Chavez,Guevara,Jean Pierre
+20221737,fchavezme@unsa.edu.pe,Fernando Jesus,Chavez Medina,Alumno,123,False,False,True,20221737,2022,Chavez,Medina,Fernando Jesus
+20162007,jchavezsa@unsa.edu.pe,Joao Franco Emanuel,Chavez Salas,Alumno,123,False,False,True,20162007,2019,Chavez,Salas,Joao Franco Emanuel
+20202237,rchayna@unsa.edu.pe,Rodrigo Vicente,Chay?A Taza,Alumno,123,False,False,True,20202237,2020,Chay?A,Taza,Rodrigo Vicente
+20223114,lchipanac@unsa.edu.pe,Luis Antonio,Chipana Chura,Alumno,123,False,False,True,20223114,2022,Chipana,Chura,Luis Antonio
+20192268,gchipanap@unsa.edu.pe,Gabriela Angel,Chipana Perez,Alumno,123,False,False,True,20192268,2019,Chipana,Perez,Gabriela Angel
+20212161,fchoqueq@unsa.edu.pe,Frida Daniela,Choque Quilca,Alumno,123,False,False,True,20212161,2021,Choque,Quilca,Frida Daniela
+20200730,rchoquehuancaan@unsa.edu.pe,Roy Angel,Choquehuanca Anconeyra,Alumno,123,False,False,True,20200730,2020,Choquehuanca,Anconeyra,Roy Angel
+20223085,achuco@unsa.edu.pe,Adderly Jamyt,Chuco Ylachoque,Alumno,123,False,False,True,20223085,2022,Chuco,Ylachoque,Adderly Jamyt
+20042684,lchullo@unsa.edu.pe,Luis Augusto,Chullo Cuellar,Alumno,123,False,False,True,20042684,2019,Chullo,Cuellar,Luis Augusto
+20220730,achullunquiar@unsa.edu.pe,Alonso Ernesto Jose,Chullunquia Rosas,Alumno,123,False,False,True,20220730,2022,Chullunquia,Rosas,Alonso Ernesto Jose
+20192266,cchuran@unsa.edu.pe,Ckaroll Darlene,Chura Navarro,Alumno,123,False,False,True,20192266,2019,Chura,Navarro,Ckaroll Darlene
+20193261,jclavijoc@unsa.edu.pe,Jhonathan,Clavijo Chacaltana,Alumno,123,False,False,True,20193261,2019,Clavijo,Chacaltana,Jhonathan
+20223087,lcoahe@unsa.edu.pe,Luis Aarón,Coa Herrera,Alumno,123,False,False,True,20223087,2022,Coa,Herrera,Luis Aarón
+20150974,gcoaylaz@unsa.edu.pe,Gonzalo Eduardo,Coayla Zuñiga,Alumno,123,False,False,True,20150974,2015,Coayla,Zuñiga,Gonzalo Eduardo
+20230579,rcolomay@unsa.edu.pe,Riki Santher,Coloma Yujra,Alumno,123,False,False,True,20230579,2023,Coloma,Yujra,Riki Santher
+20220734,gcolquefl@unsa.edu.pe,Gerardo Javier,Colque Flores,Alumno,123,False,False,True,20220734,2022,Colque,Flores,Gerardo Javier
+20213144,vcolquen@unsa.edu.pe,Valery Andrea,Colque Noa,Alumno,123,False,False,True,20213144,2021,Colque,Noa,Valery Andrea
+20183202,gcolqueq@unsa.edu.pe,Guillermo Joel,Colque Quispe,Alumno,123,False,False,True,20183202,2018,Colque,Quispe,Guillermo Joel
+20123723,fcolqueze@unsa.edu.pe,Franks Jhon,Colque Zegarra,Alumno,123,False,False,True,20123723,2012,Colque,Zegarra,Franks Jhon
+20180693,aconchal@unsa.edu.pe,Angel Tomas,Concha Layme,Alumno,123,False,False,True,20180693,2018,Concha,Layme,Angel Tomas
+20233580,acondoriat@unsa.edu.pe,Aldair Daniel,Condori Ataucuri,Alumno,123,False,False,True,20233580,2023,Condori,Ataucuri,Aldair Daniel
+20213125,ccondorib@unsa.edu.pe,Clever Juan,Condori Bernal,Alumno,123,False,False,True,20213125,2021,Condori,Bernal,Clever Juan
+20210672,econdoricas@unsa.edu.pe,Ebert Luis,Condori Casquino,Alumno,123,False,False,True,20210672,2021,Condori,Casquino,Ebert Luis
+20212164,scondorimac@unsa.edu.pe,Saul Arturo,Condori Machaca,Alumno,123,False,False,True,20212164,2021,Condori,Machaca,Saul Arturo
+20200034,acondoripu@unsa.edu.pe,Anthony Ricardo,Condori Puño,Alumno,123,False,False,True,20200034,2020,Condori,Puño,Anthony Ricardo
+20233589,acondorios@unsa.edu.pe,Anthony Richar,Condorios Chambi,Alumno,123,False,False,True,20233589,2023,Condorios,Chambi,Anthony Richar
+20232279,mcornejoalv@unsa.edu.pe,Mauricio Andres,Cornejo Alvarez,Alumno,123,False,False,True,20232279,2023,Cornejo,Alvarez,Mauricio Andres
+20220717,kcornejop@unsa.edu.pe,Karla Veronica,Cornejo Pari,Alumno,123,False,False,True,20220717,2022,Cornejo,Pari,Karla Veronica
+20202230,acruzch@unsa.edu.pe,Ancel Alain Fernando,Cruz Chaiña,Alumno,123,False,False,True,20202230,2020,Cruz,Chaiña,Ancel Alain Fernando
+20220731,ecubas@unsa.edu.pe,Elizabeth Rosario,Cuba Soncco,Alumno,123,False,False,True,20220731,2022,Cuba,Soncco,Elizabeth Rosario
+20222150,acuela@unsa.edu.pe,Andrea Lucia,Cuela Morales,Alumno,123,False,False,True,20222150,2022,Cuela,Morales,Andrea Lucia
+20233576,rcueton@unsa.edu.pe,Ronal Sebastian,Cueto Ninaja,Alumno,123,False,False,True,20233576,2023,Cueto,Ninaja,Ronal Sebastian
+20200364,kcuevasap@unsa.edu.pe,Kathia Yerardine,Cuevas Apaza,Alumno,123,False,False,True,20200364,2023,Cuevas,Apaza,Kathia Yerardine
+20192261,ecusiha@unsa.edu.pe,Evelyn Lizbeth,Cusi Hancco,Alumno,123,False,False,True,20192261,2019,Cusi,Hancco,Evelyn Lizbeth
+20210691,ldavis@unsa.edu.pe,Leon Felipe,Davis Coropuna,Alumno,123,False,False,True,20210691,2021,Davis,Coropuna,Leon Felipe
+20232275,sdelvalle@unsa.edu.pe,Delgado Sebastian Adriano,Del Valle,Alumno,123,False,False,True,20232275,2023,Del,Valle,Delgado Sebastian Adriano
+20173455,adelgadoj@unsa.edu.pe,Alexandro Ysaac,Delgado Justo,Alumno,123,False,False,True,20173455,2017,Delgado,Justo,Alexandro Ysaac
+20192265,mdezac@unsa.edu.pe,Miguel Angel,Deza Cuela,Alumno,123,False,False,True,20192265,2019,Deza,Cuela,Miguel Angel
+20223090,fdezaso@unsa.edu.pe,Fernando David,Deza Sotomayor,Alumno,123,False,False,True,20223090,2022,Deza,Sotomayor,Fernando David
+20213124,bdiazca@unsa.edu.pe,Berly Joel,Diaz Castro,Alumno,123,False,False,True,20213124,2021,Diaz,Castro,Berly Joel
+20232276,ediazva@unsa.edu.pe,Esdras Amado,Diaz Vasquez,Alumno,123,False,False,True,20232276,2023,Diaz,Vasquez,Esdras Amado
+20232282,bduenasm@unsa.edu.pe,Berly Miuler,Dueñas Mandamientos,Alumno,123,False,False,True,20232282,2023,Dueñas,Mandamientos,Berly Miuler
+20230577,renao@unsa.edu.pe,Roberto Carlos,Enao Vilca,Alumno,123,False,False,True,20230577,2023,Enao,Vilca,Roberto Carlos
+20182904,aescarza@unsa.edu.pe,Alexander Raul,Escarza Pacori,Alumno,123,False,False,True,20182904,2018,Escarza,Pacori,Alexander Raul
+20052826,iespinel@unsa.edu.pe,Ingrid Sally,Espinel Quispe,Alumno,123,False,False,True,20052826,2019,Espinel,Quispe,Ingrid Sally
+20233577,despinozab@unsa.edu.pe,David Alejandro,Espinoza Barrios,Alumno,123,False,False,True,20233577,2023,Espinoza,Barrios,David Alejandro
+20190745,eespinozape@unsa.edu.pe,Edgar Alfonso,Espinoza Peñaloza,Alumno,123,False,False,True,20190745,2019,Espinoza,Peñaloza,Edgar Alfonso
+20230585,sesteba@unsa.edu.pe,Sophia Alejandra,Esteba Feria,Alumno,123,False,False,True,20230585,2023,Esteba,Feria,Sophia Alejandra
+20200736,mfarfanhu@unsa.edu.pe,Mauricio Alejandro,Farfan Huayta,Alumno,123,False,False,True,20200736,2020,Farfan,Huayta,Mauricio Alejandro
+20170734,bfernandezm@unsa.edu.pe,Brayan Gino,Fernandez Mamani,Alumno,123,False,False,True,20170734,2017,Fernandez,Mamani,Brayan Gino
+20233588,wfernandezv@unsa.edu.pe,Willians Gabriel,Fernandez Vilca,Alumno,123,False,False,True,20233588,2023,Fernandez,Vilca,Willians Gabriel
+20224276,aferro@unsa.edu.pe,Arleen Maritza,Ferro Vasquez,Alumno,123,False,False,True,20224276,2022,Ferro,Vasquez,Arleen Maritza
+20222155,mflorescoag@unsa.edu.pe,Manuel Alonso,Flores Coaguila,Alumno,123,False,False,True,20222155,2022,Flores,Coaguila,Manuel Alonso
+20111683,jfloreshe@unsa.edu.pe,Jefferson Miguel,Flores Herrera,Alumno,123,False,False,True,20111683,2021,Flores,Herrera,Jefferson Miguel
+20220713,afloresloz@unsa.edu.pe,Alvaro Mauricio,Flores Loza,Alumno,123,False,False,True,20220713,2022,Flores,Loza,Alvaro Mauricio
+20213137,efloresq@unsa.edu.pe,Erick Bryan,Flores Quispe,Alumno,123,False,False,True,20213137,2021,Flores,Quispe,Erick Bryan
+20181745,florezag@unsa.edu.pe,Fabian Vladimir F,Florez Aguilar,Alumno,123,False,False,True,20181745,2018,Florez,Aguilar,Fabian Vladimir F
+20220724,lgaonab@unsa.edu.pe,Leonardo Gustavo,Gaona Briceño,Alumno,123,False,False,True,20220724,2022,Gaona,Briceño,Leonardo Gustavo
+20200721,ugarcia@unsa.edu.pe,Uberto,Garcia Caceres,Alumno,123,False,False,True,20200721,2020,Garcia,Caceres,Uberto
+20200722,jgarciamac@unsa.edu.pe,Juan Diego,Garcia Macedo,Alumno,123,False,False,True,20200722,2020,Garcia,Macedo,Juan Diego
+20190049,agonzalescon@unsa.edu.pe,Alejandro Javier,Gonzales Condori,Alumno,123,False,False,True,20190049,2019,Gonzales,Condori,Alejandro Javier
+20220161,agonzalestor@unsa.edu.pe,Alejandro Oscar,Gonzales Torres,Alumno,123,False,False,True,20220161,2023,Gonzales,Torres,Alejandro Oscar
+20224277,grande@unsa.edu.pe,Ronaldo Gunter R,Grande Turpo,Alumno,123,False,False,True,20224277,2022,Grande,Turpo,Ronaldo Gunter R
+20230575,eguerraa@unsa.edu.pe,Ervin Armando,Guerra Arce,Alumno,123,False,False,True,20230575,2023,Guerra,Arce,Ervin Armando
+20204681,gutierrezar@unsa.edu.pe,Ronald Romario R,Gutierrez Arratia,Alumno,123,False,False,True,20204681,2020,Gutierrez,Arratia,Ronald Romario R
+20182903,egutierreze@unsa.edu.pe,Erick Stefano,Gutierrez Enriquez,Alumno,123,False,False,True,20182903,2018,Gutierrez,Enriquez,Erick Stefano
+20231539,lgutierrezu@unsa.edu.pe,Luis Manuel,Gutierrez Umeres,Alumno,123,False,False,True,20231539,2023,Gutierrez,Umeres,Luis Manuel
+20232274,vguzmana@unsa.edu.pe,Valeria,Guzman Avalos,Alumno,123,False,False,True,20232274,2023,Guzman,Avalos,Valeria
+20233595,chanaricu@unsa.edu.pe,Cesar Alejandro,Hañari Cutipa,Alumno,123,False,False,True,20233595,2023,Hañari,Cutipa,Cesar Alejandro
+20193259,mhilaresa@unsa.edu.pe,Maryori Lizeth,Hilares Angelo,Alumno,123,False,False,True,20193259,2019,Hilares,Angelo,Maryori Lizeth
+20212741,shiman@unsa.edu.pe,Sebastian Felipe,Himan Burgos,Alumno,123,False,False,True,20212741,2021,Himan,Burgos,Sebastian Felipe
+20192275,jhuaihuah@unsa.edu.pe,Jack Christopher,Huaihua Huayhua,Alumno,123,False,False,True,20192275,2019,Huaihua,Huayhua,Jack Christopher
+20202233,ehuallap@unsa.edu.pe,Erick Klendort,Hualla Puelles,Alumno,123,False,False,True,20202233,2020,Hualla,Puelles,Erick Klendort
+20232280,mhuallpago@unsa.edu.pe,Mauricio Fernando,Huallpa Gonzales,Alumno,123,False,False,True,20232280,2023,Huallpa,Gonzales,Mauricio Fernando
+20213123,jhualpal@unsa.edu.pe,Jose Mauricio,Hualpa Lopez,Alumno,123,False,False,True,20213123,2021,Hualpa,Lopez,Jose Mauricio
+20210671,lhuamanco@unsa.edu.pe,Luciana Julissa,Huaman Coaquira,Alumno,123,False,False,True,20210671,2021,Huaman,Coaquira,Luciana Julissa
+20210696,jhuamaniv@unsa.edu.pe,Juan Diego,Huamani Vilca,Alumno,123,False,False,True,20210696,2021,Huamani,Vilca,Juan Diego
+20084621,jhuancaan@unsa.edu.pe,Jenny,Huanca Anquise,Alumno,123,False,False,True,20084621,2020,Huanca,Anquise,Jenny
+20183290,chuancao@unsa.edu.pe,Cristhian David,Huanca Olazabal,Alumno,123,False,False,True,20183290,2018,Huanca,Olazabal,Cristhian David
+20190748,ehuancap@unsa.edu.pe,Elizabeth Yasmin,Huanca Parqui,Alumno,123,False,False,True,20190748,2019,Huanca,Parqui,Elizabeth Yasmin
+20210678,fhuaquisto@unsa.edu.pe,Fabricio,Huaquisto Quispe,Alumno,123,False,False,True,20210678,2021,Huaquisto,Quispe,Fabricio
+20231538,jhuaracaq@unsa.edu.pe,Jilmar Santiago,Huaraca Quispe,Alumno,123,False,False,True,20231538,2023,Huaraca,Quispe,Jilmar Santiago
+20224274,lhuayhuac@unsa.edu.pe,Lenin Michael,Huayhua Carlos,Alumno,123,False,False,True,20224274,2022,Huayhua,Carlos,Lenin Michael
+20230578,ahuayhuap@unsa.edu.pe,Alexander Ragnar,Huayhua Perez,Alumno,123,False,False,True,20230578,2023,Huayhua,Perez,Alexander Ragnar
+20233583,fhuayhuaqu@unsa.edu.pe,Fabricio Del Piero Ernesto,Huayhua Quispe,Alumno,123,False,False,True,20233583,2023,Huayhua,Quispe,Fabricio Del Piero Ernesto
+20160753,ehuayllasco@unsa.edu.pe,Edward Luis,Huayllasco Carlos,Alumno,123,False,False,True,20160753,2016,Huayllasco,Carlos,Edward Luis
+20151125,jhuaynasi@unsa.edu.pe,Jose Luis,Huaynasi Mamani,Alumno,123,False,False,True,20151125,2015,Huaynasi,Mamani,Jose Luis
+20190760,jhuertas@unsa.edu.pe,Jim Leonardo,Huertas Canaza,Alumno,123,False,False,True,20190760,2019,Huertas,Canaza,Jim Leonardo
+20233596,cinfantesh@unsa.edu.pe,Carlo Anthony,Infantes Huanca,Alumno,123,False,False,True,20233596,2023,Infantes,Huanca,Carlo Anthony
+20204683,mituccayasi@unsa.edu.pe,Marko Marcelo,Ituccayasi Umeres,Alumno,123,False,False,True,20204683,2020,Ituccayasi,Umeres,Marko Marcelo
+20232278,djaraa@unsa.edu.pe,Daysi,Jara Arisaca,Alumno,123,False,False,True,20232278,2023,Jara,Arisaca,Daysi
+20153689,ajarah@unsa.edu.pe,Arturo Jesús,Jara Huilca,Alumno,123,False,False,True,20153689,2015,Jara,Huilca,Arturo Jesús
+20180683,ajimenezl@unsa.edu.pe,Anagabriela Pilar,Jimenez Lopez,Alumno,123,False,False,True,20180683,2018,Jimenez,Lopez,Anagabriela Pilar
+20220712,ge@unsa.edu.pe,Salim Adrian Sjor,Jorge Rodriguez,Alumno,123,False,False,True,20220712,2022,Jorge,Rodriguez,Salim Adrian Sjor
+20233584,hjuandedios@unsa.edu.pe,Dios Delgado Hellen Grace,Juan De,Alumno,123,False,False,True,20233584,2023,Juan,De,Dios Delgado Hellen Grace
+20220728,klaricoh@unsa.edu.pe,Kerin Sebastian,Larico Huillca,Alumno,123,False,False,True,20220728,2022,Larico,Huillca,Kerin Sebastian
+20233578,jlauramam@unsa.edu.pe,Jefferson Bryan,Laura Mamani,Alumno,123,False,False,True,20233578,2023,Laura,Mamani,Jefferson Bryan
+20213147,nlazop@unsa.edu.pe,Natalie Marleny,Lazo Paxi,Alumno,123,False,False,True,20213147,2021,Lazo,Paxi,Natalie Marleny
+20220733,cleonqu@unsa.edu.pe,Clever Alonzo,Leon Quispe,Alumno,123,False,False,True,20220733,2022,Leon,Quispe,Clever Alonzo
+20160459,jlizarve@unsa.edu.pe,Johan Fabricio,Lizarve Mamani,Alumno,123,False,False,True,20160459,2016,Lizarve,Mamani,Johan Fabricio
+20231534,jllactahuamaniv@unsa.edu.pe,Juan Diego,Llactahuamani Velasquez,Alumno,123,False,False,True,20231534,2023,Llactahuamani,Velasquez,Juan Diego
+20171796,yllampi@unsa.edu.pe,Yamil Yonder,Llampi Hancco,Alumno,123,False,False,True,20171796,2017,Llampi,Hancco,Yamil Yonder
+20200728,allicaa@unsa.edu.pe,Albert Daniel,Llica Alvarez,Alumno,123,False,False,True,20200728,2020,Llica,Alvarez,Albert Daniel
+20233591,fllosam@unsa.edu.pe,Fernando Enrique,Llosa Manchego,Alumno,123,False,False,True,20233591,2023,Llosa,Manchego,Fernando Enrique
+20190761,rloayzaal@unsa.edu.pe,Ruben Kim Leirson,Loayza Alarcon,Alumno,123,False,False,True,20190761,2019,Loayza,Alarcon,Ruben Kim Leirson
+20212159,alopezco@unsa.edu.pe,Andrea Del Rosario,Lopez Condori,Alumno,123,False,False,True,20212159,2021,Lopez,Condori,Andrea Del Rosario
+20230580,ilopezz@unsa.edu.pe,Ivan Alexander,Lopez Zegarra,Alumno,123,False,False,True,20230580,2023,Lopez,Zegarra,Ivan Alexander
+20223084,mluisj@unsa.edu.pe,Mariana Valery,Luis Jimenez,Alumno,123,False,False,True,20223084,2022,Luis,Jimenez,Mariana Valery
+20212162,alupoc@unsa.edu.pe,Avelino,Lupo Condori,Alumno,123,False,False,True,20212162,2021,Lupo,Condori,Avelino
+20134112,vmacedoh@unsa.edu.pe,Vanessa Mayra,Macedo Huaman,Alumno,123,False,False,True,20134112,2013,Macedo,Huaman,Vanessa Mayra
+20220718,jmachacamu@unsa.edu.pe,Jose Alejandro,Machaca Muñiz,Alumno,123,False,False,True,20220718,2022,Machaca,Muñiz,Jose Alejandro
+20230581,amachacaro@unsa.edu.pe,Adrian Valentino,Machaca Rodriguez,Alumno,123,False,False,True,20230581,2023,Machaca,Rodriguez,Adrian Valentino
+20204524,ymachacca@unsa.edu.pe,Yaquelin Liset,Machacca Puma,Alumno,123,False,False,True,20204524,2020,Machacca,Puma,Yaquelin Liset
+20224272,emalcoaccha@unsa.edu.pe,Erick Ruben,Malcoaccha Diaz,Alumno,123,False,False,True,20224272,2022,Malcoaccha,Diaz,Erick Ruben
+20213122,bmaldonadoc@unsa.edu.pe,Braulio Nayap,Maldonado Casilla,Alumno,123,False,False,True,20213122,2021,Maldonado,Casilla,Braulio Nayap
+20211820,rmaldonadop@unsa.edu.pe,Roy Abel,Maldonado Parejo,Alumno,123,False,False,True,20211820,2021,Maldonado,Parejo,Roy Abel
+20140963,wmamani@unsa.edu.pe,Wilson Isaac,Mamani Casilla,Alumno,123,False,False,True,20140963,2014,Mamani,Casilla,Wilson Isaac
+20153696,amamaniq@unsa.edu.pe,Alex Enrique,Mamani Quispe,Alumno,123,False,False,True,20153696,2015,Mamani,Quispe,Alex Enrique
+20224275,amamanira@unsa.edu.pe,Anselmo Alvaro,Mamani Ramos,Alumno,123,False,False,True,20224275,2022,Mamani,Ramos,Anselmo Alvaro
+20222144,emamaniyu@unsa.edu.pe,Edilson Bonet,Mamani Yucra,Alumno,123,False,False,True,20222144,2022,Mamani,Yucra,Edilson Bonet
+20210693,pmarinos@unsa.edu.pe,Princce Yorwin,Mariños Hilario,Alumno,123,False,False,True,20210693,2021,Mariños,Hilario,Princce Yorwin
+20173458,dmarquez@unsa.edu.pe,Daryl Oliver,Marquez Calapuja,Alumno,123,False,False,True,20173458,2017,Marquez,Calapuja,Daryl Oliver
+20210675,amartinezch@unsa.edu.pe,Aldo Raul,Martinez Choque,Alumno,123,False,False,True,20210675,2021,Martinez,Choque,Aldo Raul
+20200725,rmartinezve@unsa.edu.pe,Riomar Marcial,Martinez Velasquez,Alumno,123,False,False,True,20200725,2020,Martinez,Velasquez,Riomar Marcial
+20200733,fmattos@unsa.edu.pe,Fabrizio Miguel,Mattos Cahui,Alumno,123,False,False,True,20200733,2020,Mattos,Cahui,Fabrizio Miguel
+20213140,gav@unsa.edu.pe,Jharold Alonso Jmayor,Mayorga Villena,Alumno,123,False,False,True,20213140,2021,Mayorga,Villena,Jharold Alonso Jmayor
+20212160,smenaq@unsa.edu.pe,Sergio Sebastian Santos,Mena Quispe,Alumno,123,False,False,True,20212160,2021,Mena,Quispe,Sergio Sebastian Santos
+20222147,amendozacoaq@unsa.edu.pe,Arturo Michael,Mendoza Coaquira,Alumno,123,False,False,True,20222147,2022,Mendoza,Coaquira,Arturo Michael
+20220719,smendozaf@unsa.edu.pe,Sebastian Andres,Mendoza Fernandez,Alumno,123,False,False,True,20220719,2022,Mendoza,Fernandez,Sebastian Andres
+20180684,ymendozasu@unsa.edu.pe,Yober Maykol,Mendoza Surco,Alumno,123,False,False,True,20180684,2018,Mendoza,Surco,Yober Maykol
+20193264,gmermas@unsa.edu.pe,Genry Jhoan,Merma Salas,Alumno,123,False,False,True,20193264,2019,Merma,Salas,Genry Jhoan
+20220727,smezal@unsa.edu.pe,Sebastian Diego,Meza Lira,Alumno,123,False,False,True,20220727,2022,Meza,Lira,Sebastian Diego
+20231535,amezapa@unsa.edu.pe,Arthur Patrick,Meza Pareja,Alumno,123,False,False,True,20231535,2023,Meza,Pareja,Arthur Patrick
+20222152,rmiramira@unsa.edu.pe,Rimsky Augusto,Miramira Bellido,Alumno,123,False,False,True,20222152,2022,Miramira,Bellido,Rimsky Augusto
+20181744,lmita@unsa.edu.pe,Lesly Yaneth,Mita Yagua,Alumno,123,False,False,True,20181744,2018,Mita,Yagua,Lesly Yaneth
+20210689,smogollon@unsa.edu.pe,Sergio Daniel,Mogollon Caceres,Alumno,123,False,False,True,20210689,2021,Mogollon,Caceres,Sergio Daniel
+20233581,rmontanezp@unsa.edu.pe,Roni Ezequiel,Montañez Pacco,Alumno,123,False,False,True,20233581,2023,Montañez,Pacco,Roni Ezequiel
+20220723,jmontejo@unsa.edu.pe,Juan Carlos Giovanni,Montejo Carpio,Alumno,123,False,False,True,20220723,2022,Montejo,Carpio,Juan Carlos Giovanni
+20210695,lmontoyac@unsa.edu.pe,Leonardo,Montoya Choque,Alumno,123,False,False,True,20210695,2021,Montoya,Choque,Leonardo
+20223083,fmoralesg@unsa.edu.pe,Fernando David,Morales Gomel,Alumno,123,False,False,True,20223083,2022,Morales,Gomel,Fernando David
+20153703,lmoralest@unsa.edu.pe,Luis Fernando,Morales Tacca,Alumno,123,False,False,True,20153703,2015,Morales,Tacca,Luis Fernando
+20190743,lmoroco@unsa.edu.pe,Luis Angel,Moroco Ramos,Alumno,123,False,False,True,20190743,2019,Moroco,Ramos,Luis Angel
+20190747,imoscosoa@unsa.edu.pe,Imanol Brayan,Moscoso Apaza,Alumno,123,False,False,True,20190747,2019,Moscoso,Apaza,Imanol Brayan
+20222143,gmunozcu@unsa.edu.pe,Giomar Danny,Muñoz Curi,Alumno,123,False,False,True,20222143,2022,Muñoz,Curi,Giomar Danny
+20233587,mnietoll@unsa.edu.pe,Mauricio Aaron,Nieto Lloque,Alumno,123,False,False,True,20233587,2023,Nieto,Lloque,Mauricio Aaron
+20202234,mnifla@unsa.edu.pe,Manuel Angel,Nifla Llallacachi,Alumno,123,False,False,True,20202234,2020,Nifla,Llallacachi,Manuel Angel
+20213127,jnizama@unsa.edu.pe,Juan Carlos Antonio,Nizama Cespedes,Alumno,123,False,False,True,20213127,2021,Nizama,Cespedes,Juan Carlos Antonio
+20210694,sochoao@unsa.edu.pe,Sebastian Andre,Ochoa Ortiz,Alumno,123,False,False,True,20210694,2021,Ochoa,Ortiz,Sebastian Andre
+20182913,kolazabalc@unsa.edu.pe,Kate Itati,Olazabal Chavez,Alumno,123,False,False,True,20182913,2018,Olazabal,Chavez,Kate Itati
+20200734,gpaccohu@unsa.edu.pe,Gabriel,Pacco Huaraca,Alumno,123,False,False,True,20200734,2020,Pacco,Huaraca,Gabriel
+20102045,gpachari@unsa.edu.pe,Gerald,Pachari Millio,Alumno,123,False,False,True,20102045,2010,Pachari,Millio,Gerald
+20213134,ppacherres@unsa.edu.pe,Peter Smith,Pacherres Muñoz,Alumno,123,False,False,True,20213134,2021,Pacherres,Muñoz,Peter Smith
+20192271,epalli@unsa.edu.pe,Eden,Palli Livisi,Alumno,123,False,False,True,20192271,2019,Palli,Livisi,Eden
+20170516,apalmal@unsa.edu.pe,Alejandro Clemente,Palma Lopez,Alumno,123,False,False,True,20170516,2017,Palma,Lopez,Alejandro Clemente
+20230584,mpalominori@unsa.edu.pe,Misael Jesus,Palomino Rivadeneyra,Alumno,123,False,False,True,20230584,2023,Palomino,Rivadeneyra,Misael Jesus
+20213143,cpardave@unsa.edu.pe,Christian,Pardave Espinoza,Alumno,123,False,False,True,20213143,2021,Pardave,Espinoza,Christian
+20182906,fparedese@unsa.edu.pe,Fernanda Anthoanette,Paredes Escobedo,Alumno,123,False,False,True,20182906,2018,Paredes,Escobedo,Fernanda Anthoanette
+20024030,jparedesma@unsa.edu.pe,Jose Carlos,Paredes Malaga,Alumno,123,False,False,True,20024030,2002,Paredes,Malaga,Jose Carlos
+20210686,pparizaca@unsa.edu.pe,Paul Antony,Parizaca Mozo,Alumno,123,False,False,True,20210686,2021,Parizaca,Mozo,Paul Antony
+20231540,lpaxi@unsa.edu.pe,Leonardo Adriano,Paxi Huayhua,Alumno,123,False,False,True,20231540,2023,Paxi,Huayhua,Leonardo Adriano
+20220720,speraltaa@unsa.edu.pe,Samuel Angel,Peralta Arce,Alumno,123,False,False,True,20220720,2022,Peralta,Arce,Samuel Angel
+20190744,jperca@unsa.edu.pe,Joel Cristian,Perca Quispe,Alumno,123,False,False,True,20190744,2019,Perca,Quispe,Joel Cristian
+20202239,eperezchi@unsa.edu.pe,Erick Jesus,Perez Chipa,Alumno,123,False,False,True,20202239,2020,Perez,Chipa,Erick Jesus
+20181742,aperezr@unsa.edu.pe,Angelo Aldo,Perez Rodriguez,Alumno,123,False,False,True,20181742,2018,Perez,Rodriguez,Angelo Aldo
+20200110,jperezvi@unsa.edu.pe,Jazmin Gabriela,Perez Villasante,Alumno,123,False,False,True,20200110,2020,Perez,Villasante,Jazmin Gabriela
+20220729,jphilco@unsa.edu.pe,Josue Samuel,Philco Puma,Alumno,123,False,False,True,20220729,2022,Philco,Puma,Josue Samuel
+20113478,gpichac@unsa.edu.pe,Gleddynuri Marbel,Picha Chañi,Alumno,123,False,False,True,20113478,2022,Picha,Chañi,Gleddynuri Marbel
+20233579,rpilaresg@unsa.edu.pe,Rodrigo Rafael,Pilares Gudiel,Alumno,123,False,False,True,20233579,2023,Pilares,Gudiel,Rodrigo Rafael
+20202232,apinoh@unsa.edu.pe,Angie Alexandra,Pino Huarsaya,Alumno,123,False,False,True,20202232,2020,Pino,Huarsaya,Angie Alexandra
+20222151,jpinopa@unsa.edu.pe,Jorge Luis,Pino Palpa,Alumno,123,False,False,True,20222151,2022,Pino,Palpa,Jorge Luis
+20231533,jpococ@unsa.edu.pe,Jafet Joel,Poco Chire,Alumno,123,False,False,True,20231533,2023,Poco,Chire,Jafet Joel
+20220714,lponze@unsa.edu.pe,Leonardo Jesus,Ponze Bellido,Alumno,123,False,False,True,20220714,2022,Ponze,Bellido,Leonardo Jesus
+20162924,jpostigo@unsa.edu.pe,Juan Carlos,Postigo Cabana,Alumno,123,False,False,True,20162924,2016,Postigo,Cabana,Juan Carlos
+20180694,kpucho@unsa.edu.pe,Kelvin Paul,Pucho Zevallos,Alumno,123,False,False,True,20180694,2018,Pucho,Zevallos,Kelvin Paul
+20190750,vquicano@unsa.edu.pe,Victor Alejandro,Quicaño Miranda,Alumno,123,False,False,True,20190750,2019,Quicaño,Miranda,Victor Alejandro
+20213126,bquilcah@unsa.edu.pe,Bryan Anthony,Quilca Huamani,Alumno,123,False,False,True,20213126,2021,Quilca,Huamani,Bryan Anthony
+20230571,mquinad@unsa.edu.pe,Marcelo Adrian,Quina Delgado,Alumno,123,False,False,True,20230571,2023,Quina,Delgado,Marcelo Adrian
+20220716,dquinoneso@unsa.edu.pe,Daniel Frank,Quiñones Olgado,Alumno,123,False,False,True,20220716,2022,Quiñones,Olgado,Daniel Frank
+20233594,jquinteros@unsa.edu.pe,Jesus Salvador,Quinteros Condori,Alumno,123,False,False,True,20233594,2023,Quinteros,Condori,Jesus Salvador
+20111697,dquispecan@unsa.edu.pe,Diego,Quispe Candelario,Alumno,123,False,False,True,20111697,2022,Quispe,Candelario,Diego
+20214284,lquispeccah@unsa.edu.pe,Luis Alberto,Quispe Ccahuaya,Alumno,123,False,False,True,20214284,2021,Quispe,Ccahuaya,Luis Alberto
+20181740,joquispehua@unsa.edu.pe,Joselyn Lizeth,Quispe Huanca,Alumno,123,False,False,True,20181740,2018,Quispe,Huanca,Joselyn Lizeth
+20193256,jquispemend@unsa.edu.pe,Juan Daniel,Quispe Mendoza,Alumno,123,False,False,True,20193256,2019,Quispe,Mendoza,Juan Daniel
+20190741,pquispemor@unsa.edu.pe,Paul Jesus,Quispe Morocco,Alumno,123,False,False,True,20190741,2019,Quispe,Morocco,Paul Jesus
+20210673,jquisperoj@unsa.edu.pe,Javier Wilber,Quispe Rojas,Alumno,123,False,False,True,20210673,2021,Quispe,Rojas,Javier Wilber
+20141027,jquispeto@unsa.edu.pe,Juan Manuel,Quispe Torres,Alumno,123,False,False,True,20141027,2014,Quispe,Torres,Juan Manuel
+20230583,arafael@unsa.edu.pe,Angel Fabian,Rafael Ccolqque,Alumno,123,False,False,True,20230583,2023,Rafael,Ccolqque,Angel Fabian
+20213128,pramirezza@unsa.edu.pe,Patrik Rene,Ramirez Zarate,Alumno,123,False,False,True,20213128,2021,Ramirez,Zarate,Patrik Rene
+20220721,lramoscha@unsa.edu.pe,Luis Enrique,Ramos Chambi,Alumno,123,False,False,True,20220721,2022,Ramos,Chambi,Luis Enrique
+20223089,eramosq@unsa.edu.pe,Erik Manuel,Ramos Quispe,Alumno,123,False,False,True,20223089,2022,Ramos,Quispe,Erik Manuel
+20220725,areyesrod@unsa.edu.pe,Angel Daniel,Reyes Rodriguez,Alumno,123,False,False,True,20220725,2022,Reyes,Rodriguez,Angel Daniel
+20182911,srimache@unsa.edu.pe,Sennayda Sadid,Rimache Choquehuanca,Alumno,123,False,False,True,20182911,2018,Rimache,Choquehuanca,Sennayda Sadid
+20232285,jrivasab@unsa.edu.pe,Jorge Aaron,Rivas Abril,Alumno,123,False,False,True,20232285,2023,Rivas,Abril,Jorge Aaron
+20223086,driverac@unsa.edu.pe,Diego Benjamin,Rivera Cruz,Alumno,123,False,False,True,20223086,2022,Rivera,Cruz,Diego Benjamin
+20230570,jriverato@unsa.edu.pe,Jose Alberto,Rivera Torres,Alumno,123,False,False,True,20230570,2023,Rivera,Torres,Jose Alberto
+20213130,mrobles@unsa.edu.pe,Mauricio Sebastian,Robles Ramos,Alumno,123,False,False,True,20213130,2021,Robles,Ramos,Mauricio Sebastian
+20212157,grodriguezcu@unsa.edu.pe,Gabriel Fernando,Rodriguez Cutimbo,Alumno,123,False,False,True,20212157,2021,Rodriguez,Cutimbo,Gabriel Fernando
+20220736,krodriguezl@unsa.edu.pe,Kevin Andre,Rodriguez Lima,Alumno,123,False,False,True,20220736,2022,Rodriguez,Lima,Kevin Andre
+20200720,rrodriguezp@unsa.edu.pe,Ricardo Alexander,Rodriguez Pumacayo,Alumno,123,False,False,True,20200720,2020,Rodriguez,Pumacayo,Ricardo Alexander
+20204677,erojasm@unsa.edu.pe,Eduardo Fabian,Rojas Miranda,Alumno,123,False,False,True,20204677,2020,Rojas,Miranda,Eduardo Fabian
+20190752,sromeroc@unsa.edu.pe,Solange Aracely,Romero Chacon,Alumno,123,False,False,True,20190752,2019,Romero,Chacon,Solange Aracely
+20181796,rromeroro@unsa.edu.pe,Romeo Alipio,Romero Rocca,Alumno,123,False,False,True,20181796,2018,Romero,Rocca,Romeo Alipio
+20211819,oroque@unsa.edu.pe,Owen Haziel,Roque Sosa,Alumno,123,False,False,True,20211819,2021,Roque,Sosa,Owen Haziel
+20213120,krospigliosig@unsa.edu.pe,Kristopher,Rospigliosi Gonzales,Alumno,123,False,False,True,20213120,2021,Rospigliosi,Gonzales,Kristopher
+20180717,mruelasq@unsa.edu.pe,Merisabel,Ruelas Quenaya,Alumno,123,False,False,True,20180717,2018,Ruelas,Quenaya,Merisabel
+20193061,eruizm@unsa.edu.pe,Eduardo German,Ruiz Mamani,Alumno,123,False,False,True,20193061,2019,Ruiz,Mamani,Eduardo German
+20233593,bsalazarn@unsa.edu.pe,Brayan Ronaldo,Salazar Ñaupa,Alumno,123,False,False,True,20233593,2023,Salazar,Ñaupa,Brayan Ronaldo
+20210685,dsaldanam@unsa.edu.pe,Diego Fernando,Saldaña Moscoso,Alumno,123,False,False,True,20210685,2021,Saldaña,Moscoso,Diego Fernando
+20204686,jsanchezchi@unsa.edu.pe,John Edson,Sanchez Chilo,Alumno,123,False,False,True,20204686,2020,Sanchez,Chilo,John Edson
+20193258,lsantet@unsa.edu.pe,Luis Felipe,Sante Taipe,Alumno,123,False,False,True,20193258,2019,Sante,Taipe,Luis Felipe
+20193260,rsantillanaq@unsa.edu.pe,Rodrigo Junior,Santillana Quispe,Alumno,123,False,False,True,20193260,2019,Santillana,Quispe,Rodrigo Junior
+20193253,rsantisteban@unsa.edu.pe,Rodrigo Jesus,Santisteban Pachari,Alumno,123,False,False,True,20193253,2019,Santisteban,Pachari,Rodrigo Jesus
+20170730,lsihuintap@unsa.edu.pe,Luis Armando,Sihuinta Perez,Alumno,123,False,False,True,20170730,2017,Sihuinta,Perez,Luis Armando
+20170741,bsilvaco@unsa.edu.pe,Brian Emanuel,Silva Corrales,Alumno,123,False,False,True,20170741,2017,Silva,Corrales,Brian Emanuel
+20213132,asolisz@unsa.edu.pe,Axel Jhuan,Solis Zamata,Alumno,123,False,False,True,20213132,2021,Solis,Zamata,Axel Jhuan
+20160757,jsonccolu@unsa.edu.pe,Jean Carlos,Soncco Lupa,Alumno,123,False,False,True,20160757,2016,Soncco,Lupa,Jean Carlos
+20172210,isoncco@unsa.edu.pe,Ivan Ulises,Soncco Pacco,Alumno,123,False,False,True,20172210,2017,Soncco,Pacco,Ivan Ulises
+20163435,rsonco@unsa.edu.pe,Ronaldo Randu,Sonco Quispe,Alumno,123,False,False,True,20163435,2016,Sonco,Quispe,Ronaldo Randu
+20192267,jsotobe@unsa.edu.pe,Juan Manuel,Soto Begazo,Alumno,123,False,False,True,20192267,2019,Soto,Begazo,Juan Manuel
+20212163,asotohu@unsa.edu.pe,Angela Shirleth,Soto Huerta,Alumno,123,False,False,True,20212163,2021,Soto,Huerta,Angela Shirleth
+20192263,lsotomayorm@unsa.edu.pe,Luis Alberto,Sotomayor Moya,Alumno,123,False,False,True,20192263,2019,Sotomayor,Moya,Luis Alberto
+20222146,fsuca@unsa.edu.pe,Fernando Anibal,Suca Quispe,Alumno,123,False,False,True,20222146,2022,Suca,Quispe,Fernando Anibal
+20173778,esucasacac@unsa.edu.pe,Edward Henry,Sucasaca Chire,Alumno,123,False,False,True,20173778,2017,Sucasaca,Chire,Edward Henry
+20190746,asucso@unsa.edu.pe,Angela Solange,Sucso Choque,Alumno,123,False,False,True,20190746,2019,Sucso,Choque,Angela Solange
+20200724,jsumare@unsa.edu.pe,Josue Gabriel,Sumare Uscca,Alumno,123,False,False,True,20200724,2020,Sumare,Uscca,Josue Gabriel
+20222148,asumaria@unsa.edu.pe,Alessandro Steven,Sumaria Choqueluque,Alumno,123,False,False,True,20222148,2022,Sumaria,Choqueluque,Alessandro Steven
+20220715,msumirer@unsa.edu.pe,Marko Julio,Sumire Ramos,Alumno,123,False,False,True,20220715,2022,Sumire,Ramos,Marko Julio
+20202236,ysuniq@unsa.edu.pe,Yanira Angie,Suni Quispe,Alumno,123,False,False,True,20202236,2020,Suni,Quispe,Yanira Angie
+20233597,gsupom@unsa.edu.pe,Gerald Steve,Supo Molina,Alumno,123,False,False,True,20233597,2023,Supo,Molina,Gerald Steve
+20233586,fsurcoc@unsa.edu.pe,Fernando Alonso,Surco Cora,Alumno,123,False,False,True,20233586,2023,Surco,Cora,Fernando Alonso
+20190224,ctaipe@unsa.edu.pe,Cristhian Luis,Taipe Huanca,Alumno,123,False,False,True,20190224,2019,Taipe,Huanca,Cristhian Luis
+20223082,ctaipes@unsa.edu.pe,Christian Daniel,Taipe Saraza,Alumno,123,False,False,True,20223082,2022,Taipe,Saraza,Christian Daniel
+20095936,dtamo@unsa.edu.pe,David Ernesto,Tamo Turpo,Alumno,123,False,False,True,20095936,2009,Tamo,Turpo,David Ernesto
+20224270,jtaquirig@unsa.edu.pe,Jorge Patrick,Taquiri Guerreros,Alumno,123,False,False,True,20224270,2022,Taquiri,Guerreros,Jorge Patrick
+20180690,staya@unsa.edu.pe,Samuel Omar,Taya Yana,Alumno,123,False,False,True,20180690,2018,Taya,Yana,Samuel Omar
+20222154,mticonala@unsa.edu.pe,Michael Jarnie,Ticona Larico,Alumno,123,False,False,True,20222154,2022,Ticona,Larico,Michael Jarnie
+20190759,aticonamo@unsa.edu.pe,Alvaro Joel,Ticona Motta,Alumno,123,False,False,True,20190759,2019,Ticona,Motta,Alvaro Joel
+20232277,eticonaper@unsa.edu.pe,Erika Daysi,Ticona Pereyra,Alumno,123,False,False,True,20232277,2023,Ticona,Pereyra,Erika Daysi
+20163434,jtitoc@unsa.edu.pe,Jorge Alfredo,Tito Ccahuaya,Alumno,123,False,False,True,20163434,2016,Tito,Ccahuaya,Jorge Alfredo
+20233592,ltitov@unsa.edu.pe,Lizeth Angelica,Tito Vilca,Alumno,123,False,False,True,20233592,2023,Tito,Vilca,Lizeth Angelica
+20233585,atorresara@unsa.edu.pe,Alberto Gabriel,Torres Ara,Alumno,123,False,False,True,20233585,2023,Torres,Ara,Alberto Gabriel
+20210194,jtorresba@unsa.edu.pe,Jair David,Torres Barra,Alumno,123,False,False,True,20210194,2021,Torres,Barra,Jair David
+20172220,etorresq@unsa.edu.pe,Erick Jesus,Torres Quispe,Alumno,123,False,False,True,20172220,2017,Torres,Quispe,Erick Jesus
+20204687,ctorresra@unsa.edu.pe,Camila Antuaneth,Torres Ramos,Alumno,123,False,False,True,20204687,2020,Torres,Ramos,Camila Antuaneth
+20213135,jusccag@unsa.edu.pe,Jhonatan Bilbao,Uscca Giraldo,Alumno,123,False,False,True,20213135,2021,Uscca,Giraldo,Jhonatan Bilbao
+20192273,jvaldiviame@unsa.edu.pe,Juan Diego,Valdivia Mendoza,Alumno,123,False,False,True,20192273,2019,Valdivia,Mendoza,Juan Diego
+20182363,evaldiviaq@unsa.edu.pe,Eduardo Felipe,Valdivia Quispe,Alumno,123,False,False,True,20182363,2018,Valdivia,Quispe,Eduardo Felipe
+20180682,lvaldiviaram@unsa.edu.pe,Leonardo Daniel,Valdivia Ramos,Alumno,123,False,False,True,20180682,2018,Valdivia,Ramos,Leonardo Daniel
+20210676,dvaldiviaz@unsa.edu.pe,Deivid Andre,Valdivia Zavaleta,Alumno,123,False,False,True,20210676,2021,Valdivia,Zavaleta,Deivid Andre
+20190751,gvalenciaar@unsa.edu.pe,Gabriel Adriano,Valencia Arana,Alumno,123,False,False,True,20190751,2019,Valencia,Arana,Gabriel Adriano
+20213121,avalenciad@unsa.edu.pe,Alejandro Jacob,Valencia Delgado,Alumno,123,False,False,True,20213121,2021,Valencia,Delgado,Alejandro Jacob
+20172221,gashe@unsa.edu.pe,Edwar Jhoel Evar,Vargas Herhuay,Alumno,123,False,False,True,20172221,2017,Vargas,Herhuay,Edwar Jhoel Evar
+20210687,jvelasquezmo@unsa.edu.pe,Juan Jose,Velasquez Montoya,Alumno,123,False,False,True,20210687,2021,Velasquez,Montoya,Juan Jose
+20224271,rventurave@unsa.edu.pe,Ronald,Ventura Venero,Alumno,123,False,False,True,20224271,2022,Ventura,Venero,Ronald
+20111698,cvilcaal@unsa.edu.pe,Cecilia Del Pilar,Vilca Alvites,Alumno,123,False,False,True,20111698,2019,Vilca,Alvites,Cecilia Del Pilar
+20190754,svilcalim@unsa.edu.pe,Santiago Javier,Vilca Limachi,Alumno,123,False,False,True,20190754,2019,Vilca,Limachi,Santiago Javier
+20204679,jvilcasam@unsa.edu.pe,Jesus Alonso,Vilca Samanez,Alumno,123,False,False,True,20204679,2020,Vilca,Samanez,Jesus Alonso
+20192272,mvilchezmo@unsa.edu.pe,Misael Svante,Vilchez Molina,Alumno,123,False,False,True,20192272,2019,Vilchez,Molina,Misael Svante
+20202238,avillah@unsa.edu.pe,Alejandro Antonio,Villa Herrera,Alumno,123,False,False,True,20202238,2020,Villa,Herrera,Alejandro Antonio
+20231536,ivillalbaa@unsa.edu.pe,Ibeliz Karelia,Villalba Apaza,Alumno,123,False,False,True,20231536,2023,Villalba,Apaza,Ibeliz Karelia
+20192262,jvillalobosb@unsa.edu.pe,Juan Jose,Villalobos Baños,Alumno,123,False,False,True,20192262,2019,Villalobos,Baños,Juan Jose
+20223088,fvillantoy@unsa.edu.pe,Fabricio,Villantoy Apaza,Alumno,123,False,False,True,20223088,2022,Villantoy,Apaza,Fabricio
+20190742,lvillanuevag@unsa.edu.pe,Luisa,Villanueva Guerrero,Alumno,123,False,False,True,20190742,2019,Villanueva,Guerrero,Luisa
+20200727,fvillarroel@unsa.edu.pe,Fiorela Estefany,Villarroel Ramos,Alumno,123,False,False,True,20200727,2020,Villarroel,Ramos,Fiorela Estefany
+20202229,pvizcarra@unsa.edu.pe,Piero Emiliano,Vizcarra Vargas,Alumno,123,False,False,True,20202229,2020,Vizcarra,Vargas,Piero Emiliano
+20163988,dyagua@unsa.edu.pe,Dante Zamir,Yagua Neira,Alumno,123,False,False,True,20163988,2023,Yagua,Neira,Dante Zamir
+20162537,hyanquiv@unsa.edu.pe,Henry Aron,Yanqui Vera,Alumno,123,False,False,True,20162537,2016,Yanqui,Vera,Henry Aron
+20200729,jyaurii@unsa.edu.pe,Julio Enrique,Yauri Ituccayasi,Alumno,123,False,False,True,20200729,2020,Yauri,Ituccayasi,Julio Enrique
+20210683,szamalloam@unsa.edu.pe,Sebastian Agenor,Zamalloa Molina,Alumno,123,False,False,True,20210683,2021,Zamalloa,Molina,Sebastian Agenor
+20192274,dzanabria@unsa.edu.pe,Diego Alonso,Zanabria Sacsi,Alumno,123,False,False,True,20192274,2019,Zanabria,Sacsi,Diego Alonso
+20230582,gzapanap@unsa.edu.pe,Gonzalo Rodrigo,Zapana Pariapaza,Alumno,123,False,False,True,20230582,2023,Zapana,Pariapaza,Gonzalo Rodrigo
+20222142,kzenayuca@unsa.edu.pe,Katherin Milagros,Zenayuca Corimanya,Alumno,123,False,False,True,20222142,2022,Zenayuca,Corimanya,Katherin Milagros
+20213129,lzhong@unsa.edu.pe,Linghai Joaquin,Zhong Callasi,Alumno,123,False,False,True,20213129,2021,Zhong,Callasi,Linghai Joaquin
