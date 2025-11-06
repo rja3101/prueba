@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Tomar asistencia{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <h3 class="fw-bold text-primary mb-4">
+    <i class="bi bi-clipboard-check me-2"></i>Tomar asistencia
+  </h3>
+
+  {% if groups %}
+    <div class="list-group shadow-sm">
+      {% for g in groups %}
+      <div class="list-group-item d-flex justify-content-between align-items-center">
+        <div>
+          <strong>{{ g.course.code }}</strong> — {{ g.course.name }}
+          <small class="text-muted">(Sección {{ g.section }})</small>
+        </div>
+        <button class="btn btn-sm btn-outline-primary" disabled>
+          Próximamente
+        </button>
+      </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="alert alert-warning">
+      No tienes grupos asignados para asistencia.
+    </div>
+  {% endif %}
+</div>
+{% endblock %}
