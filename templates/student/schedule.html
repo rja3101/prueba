@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Mi Horario{% endblock %}
+{% block content %}
+<div class="container py-4">
+  <h2 class="fw-bold mb-4 text-info">
+    <i class="bi bi-calendar-week"></i> Mi horario
+  </h2>
+
+  {% if schedule %}
+    <div class="table-responsive shadow-sm">
+      <table class="table table-bordered align-middle">
+        <thead class="table-info">
+          <tr>
+            <th>Día</th><th>Hora</th><th>Curso</th><th>Aula</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for s in schedule %}
+        <tr>
+          <td>{{ s.day }}</td>
+          <td>{{ s.start_time }} - {{ s.end_time }}</td>
+          <td>{{ s.course_group.course.name }}</td>
+          <td>{{ s.room }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <div class="alert alert-secondary text-center shadow-sm">
+      <i class="bi bi-calendar2-x"></i> Tu horario aparecerá aquí próximamente.
+    </div>
+  {% endif %}
+</div>
+{% endblock %}

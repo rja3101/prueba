@@ -1,69 +1,69 @@
 code,name,semester,credits,teacher_username
-1701101,Razonamiento Logico Matematico,1,3,docente1
-1701102,Metodologia Del Trabajo Intelectual Universitario,1,2,docente1
-1701104,Arte Computacional,1,3,docente1
-1701105,Ingles Tecnico Profesional I,1,3,docente1
-1701106,Fundamentos De Computacion,1,4,docente1
-1701107,Estructuras Discretas I,1,4,docente1
-1701114,Liderazgo Y Oratoria,1,2,docente1
-1701208,Estructuras Discretas II,2,5,docente1
-1701209,Ciencia De La Computacion I,2,5,docente1
-1701210,Calculo En Una Variable,2,5,docente1
-1701212,Ingles Tecnico Profesional II,2,3,docente1
-1701215,Comunicacion Integral,2,3,docente1
-1701216,Realidad Nacional,2,2,docente1
-1702117,Arquitectura De Computadores,3,3,docente1
-1702118,Ciencias De La Computacion II,3,5,docente1
-1702119,Desarrollo Basado En Plataformas,3,3,docente1
-1702120,Trabajo Interdisciplinar I,3,2,docente1
-1702121,Calculo En Varias Variables,3,5,docente1
-1702122,Ingles Tecnico Profesional III,3,3,docente1
-1702123,Ciudadania E Interculturalidad,3,2,docente1
-1702224,Algoritmos Y Estructuras De Datos,4,5,docente1
-1702225,Teoria De La Computacion,4,4,docente1
-1702226,Base De Datos I,4,4,docente1
-1702227,Algebra Lineal Numerica,4,4,docente1
-1702228,Estadistica Y Probabilidades,4,4,docente1
-1702229,Ecologia Y Conservacion Ambiental,4,2,docente1
-1703130,Base De Datos II,5,3,docente1
-1703131,Analisis Y Diseno De Algoritmos,5,4,docente1
-1703132,Ingenieria De Software I,5,3,docente1
-1703133,Compiladores,5,3,docente1
-1703134,Analisis Exploratorio De Datos Espaciales,5,4,docente1
-1703135,Ecuaciones Diferenciales,5,4,docente1
-1703236,Programacion Competitiva,6,3,docente1
-1703237,Ingenieria De Software II,6,4,docente1
-1703238,Estructuras De Datos Avanzados,6,4,docente1
-1703239,Sistemas Operativos,6,4,docente1
-1703240,Trabajo Interdisciplinar II,6,3,docente1
-1703241,Matematica Aplicada A La Computacion,6,4,docente1
-1704142,Investigacion En Ciencias De La Computacion,7,3,docente1
-1704143,Desarrollo De Software Empresarial,7,4,docente1
-1704144,Redes Y Comunicacion,7,3,docente1
-1704145,Ingenieria De Software III,7,3,docente1
-1704146,Computacion Grafica,7,4,docente1
-1704147,Inteligencia Artificial,7,4,docente1
-1704248,Interaccion Humano Computador,8,3,docente1
-1704249,Proyecto De Final De Carrera I,8,3,docente1
-1704250,Computacion Paralela Y Distribuida,8,4,docente1
-1704251,Seguridad En Computacion,8,3,docente1
-1704252,Formacion De Empresas De Base Tecnologica I,8,3,docente1
-1704253,Relaciones Humanas,8,2,docente1
-1704254,Fisica Computacional (E),8,3,docente1
-1704255,Topicos En Ingenieria De Software (E),8,3,docente1
-1705156,Proyecto De Final De Carrera II,9,3,docente1
-1705157,Big Data,9,3,docente1
-1705158,Etica General Y Profesional,9,2,docente1
-1705159,Formacion De Empresas De Base Tecnologica II,9,2,docente1
-1705160,Ingles Tecnico Profesional IV,9,3,docente1
-1705161,Topicos En Ciencia De Datos (E),9,4,docente1
-1705162,Topicos En Inteligencia Artificial (E),9,4,docente1
-1705163,Topicos En Computacion Grafica (E),9,4,docente1
-1705164,Bioinformatica (E),9,4,docente1
-1705265,Cloud Computing,10,4,docente1
-1705266,Proyecto De Final De Carrera III,10,6,docente1
-1705267,Trabajo Interdisciplinar III,10,2,docente1
-1705268,Internet De Las Cosas,10,3,docente1
-1705269,Robotica (E),10,4,docente1
-1705270,Topicos En Ciberseguridad (E),10,4,docente1
-1705271,Practicas Pre Profesionales,10,2,docente1
+1701101,Razonamiento Logico Matematico,1,3,rpaccotacay
+1701102,Metodologia Del Trabajo Intelectual Universitario,1,2,rpaccotacay
+1701104,Arte Computacional,1,3,rapazaa
+1701105,Ingles Tecnico Profesional I,1,3,wramosl
+1701106,Fundamentos De Computacion,1,4,wramosl
+1701107,Estructuras Discretas I,1,4,yvelazcop
+1701114,Liderazgo Y Oratoria,1,2,laraujoc
+1701208,Estructuras Discretas II,2,5,yvelazcop
+1701209,Ciencia De La Computacion I,2,5,rapazaa
+1701210,Calculo En Una Variable,2,5,prodriguezg
+1701212,Ingles Tecnico Profesional II,2,3,prodriguezg
+1701215,Comunicacion Integral,2,3,amaytas
+1701216,Realidad Nacional,2,2,amaytas
+1702117,Arquitectura De Computadores,3,3,acentenoa
+1702118,Ciencias De La Computacion II,3,5,acentenoa
+1702119,Desarrollo Basado En Plataformas,3,3,acuadrosv
+1702120,Trabajo Interdisciplinar I,3,2,acuadrosv
+1702121,Calculo En Varias Variables,3,5,jgutierrezc
+1702122,Ingles Tecnico Profesional III,3,3,eadriazolah
+1702123,Ciudadania E Interculturalidad,3,2,jgutierrezc
+1702224,Algoritmos Y Estructuras De Datos,4,5,eadriazolah
+1702225,Teoria De La Computacion,4,4,esarmientoc
+1702226,Base De Datos I,4,4,acuadrosv
+1702227,Algebra Lineal Numerica,4,4,clopezda
+1702228,Estadistica Y Probabilidades,4,4,gcahuanam
+1702229,Ecologia Y Conservacion Ambiental,4,2,tyanezf
+1703130,Base De Datos II,5,3,clopezda
+1703131,Analisis Y Diseno De Algoritmos,5,4,tyanezf
+1703132,Ingenieria De Software I,5,3,tyanezf
+1703133,Compiladores,5,3,clopezda
+1703134,Analisis Exploratorio De Datos Espaciales,5,4,rcardenast
+1703135,Ecuaciones Diferenciales,5,4,clopezda
+1703236,Programacion Competitiva,6,3,gcahuanam
+1703237,Ingenieria De Software II,6,4,rcardenast
+1703238,Estructuras De Datos Avanzados,6,4,gcahuanam
+1703239,Sistemas Operativos,6,4,apazv
+1703240,Trabajo Interdisciplinar II,6,3,apazv
+1703241,Matematica Aplicada A La Computacion,6,4,rcardenast
+1704142,Investigacion En Ciencias De La Computacion,7,3,itupacv
+1704143,Desarrollo De Software Empresarial,7,4,apazv
+1704144,Redes Y Comunicacion,7,3,itupacv
+1704145,Ingenieria De Software III,7,3,amamania
+1704146,Computacion Grafica,7,4,wramosl
+1704147,Inteligencia Artificial,7,4,wramosl
+1704248,Interaccion Humano Computador,8,3,amamania
+1704249,Proyecto De Final De Carrera I,8,3,amamania
+1704250,Computacion Paralela Y Distribuida,8,4,wramosl
+1704251,Seguridad En Computacion,8,3,rticonaa
+1704252,Formacion De Empresas De Base Tecnologica I,8,3,rticonaa
+1704253,Relaciones Humanas,8,2,amamania
+1704254,Fisica Computacional (E),8,3,rticonaa
+1704255,Topicos En Ingenieria De Software (E),8,3,amamania
+1705156,Proyecto De Final De Carrera II,9,3,rfloresq
+1705157,Big Data,9,3,rfloresq
+1705158,Etica General Y Profesional,9,2,rfloresq
+1705159,Formacion De Empresas De Base Tecnologica II,9,2,eadriazolah
+1705160,Ingles Tecnico Profesional IV,9,3,eadriazolah
+1705161,Topicos En Ciencia De Datos (E),9,4,eadriazolah
+1705162,Topicos En Inteligencia Artificial (E),9,4,jgutierrezc
+1705163,Topicos En Computacion Grafica (E),9,4,rfloresq
+1705164,Bioinformatica (E),9,4,jgutierrezc
+1705265,Cloud Computing,10,4,jgutierrezc
+1705266,Proyecto De Final De Carrera III,10,6,jgutierrezc
+1705267,Trabajo Interdisciplinar III,10,2,jgutierrezc
+1705268,Internet De Las Cosas,10,3,apazv
+1705269,Robotica (E),10,4,apazv
+1705270,Topicos En Ciberseguridad (E),10,4,amamania
+1705271,Practicas Pre Profesionales,10,2,apazv

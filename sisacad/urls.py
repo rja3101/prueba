@@ -8,8 +8,8 @@ def home(request):
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", home, name="home"),
-    path("users/", include("apps.users.urls")),
-    path("academics/", include("apps.academics.urls")),
+    path("usuarios/", include("apps.users.urls", namespace="users")),
+    path("academics/", include("apps.academics.urls", namespace="academics")),
     path("attendance/", include("apps.attendance.urls")),
     path("accounts/", include("django.contrib.auth.urls")),  # login/logout/password_*
 ]

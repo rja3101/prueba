@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Matricularme{% endblock %}
+{% block content %}
+<div class="container py-4">
+  <h2 class="fw-bold mb-4 text-warning">
+    <i class="bi bi-mortarboard"></i> Cursos disponibles para matrícula
+  </h2>
+
+  {% if groups %}
+  <div class="table-responsive shadow-sm">
+    <table class="table table-hover align-middle">
+      <thead class="table-warning">
+        <tr>
+          <th>Código</th>
+          <th>Curso</th>
+          <th>Docente</th>
+          <th>Créditos</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for g in groups %}
+        <tr>
+          <td>{{ g.course.code }}</td>
+          <td class="fw-semibold">{{ g.course.name }}</td>
+          <td>{{ g.teacher.first_name }} {{ g.teacher.last_name }}</td>
+          <td>{{ g.course.credits }}</td>
+          <td>
+            <a href="{% url 'academics:student_enroll' g.id %}" class="btn btn-sm btn-outline-warning">
+              <i class="bi bi-plus-circle"></i> Matricular
+            </a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="alert alert-info text-center shadow-sm">
+    <i class="bi bi-info-circle"></i> No hay cursos disponibles para matricularte.
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

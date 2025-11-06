@@ -1,6 +1,10 @@
+# apps/users/urls.py
 from django.urls import path
-from .views import users_index
+from .views import RoleBasedLoginView, CustomLogoutView
+
+app_name = "users"
 
 urlpatterns = [
-    path("", users_index, name="users_index"),
+    path("login/", RoleBasedLoginView.as_view(), name="login"),
+    path("logout/", CustomLogoutView.as_view(), name="logout"),
 ]

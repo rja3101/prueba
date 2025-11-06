@@ -5,6 +5,7 @@ from .views_import import import_students, import_enrollments
 from .views_reports import occupancy_report, occupancy_csv
 from .views_grades import import_grades, grades_csv   # <- grades_csv lo agregamos abajo
 from .views_stats import group_stats_view              # <- nombre EXACTO al tuyo
+from . import views_student
 
 app_name = "academics"
 
@@ -23,4 +24,11 @@ urlpatterns = [
     path("teacher/grades/import/<int:group_id>/", import_grades, name="import_grades"),
     path("group/<int:group_id>/grades.csv", grades_csv, name="grades_csv"),
     path("group/<int:group_id>/stats/view/", group_stats_view, name="coursegroup_stats_view"),
+    
+    path("alumno/", views_student.student_dashboard, name="student_dashboard"),
+    path("alumno/cursos/", views_student.student_courses, name="student_courses"),
+    path("alumno/notas/", views_student.student_grades, name="student_grades"),
+    path("alumno/ofertas/", views_student.student_offerings, name="student_offerings"),
+    path("alumno/ofertas/<int:group_id>/matricular/",views_student.student_enroll,name="student_enroll"),
+    path("alumno/horario/", views_student.student_schedule, name="student_schedule"),
 ]

@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}Panel del Alumno{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <h1 class="mb-4">Bienvenido, {{ request.user.first_name }} 👋</h1>
+
+  <div class="row g-3">
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+          Mis cursos matriculados
+        </div>
+        <div class="card-body">
+          {% if enrollments %}
+            <ul class="list-group list-group-flush">
+              {% for e in enrollments %}
+                <li class="list-group-item">
+                  <strong>{{ e.course_group.course.code }} - {{ e.course_group.course.name }}</strong>
+                  <br>
+                  Sección: {{ e.course_group.section }}<br>
+                  Docente: {{ e.course_group.teacher.get_full_name|default:e.course_group.teacher.username }}
+                </li>
+              {% endfor %}
+            </ul>
+            <div class="mt-3 text-end">
+              <a href="{% url 'academics:student_courses' %}" class="btn btn-sm btn-outline-primary">
+                Ver todos
+              </a>
+            </div>
+          {% else %}
+            <p>No estás matriculado en ningún curso todavía.</p>
+            <a href="{% url 'academics:student_offerings' %}" class="btn btn-sm btn-primary">
+              Ver cursos disponibles
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-header bg-success text-white">
+          Mis últimas notas
+        </div>
+        <div class="card-body">
+          {% if grades %}
+            <ul class="list-group list-group-flush">
+              {% for g in grades %}
+                <li class="list-group-item">
+                  <strong>{{ g.assessment.course_group.course.code }} - {{ g.assessment.course_group.course.name }}</strong><br>
+                  {{ g.assessment.name }}: <strong>{{ g.value }}</strong>
+                </li>
+              {% endfor %}
+            </ul>
+            <div class="mt-3 text-end">
+              <a href="{% url 'academics:student_grades' %}" class="btn btn-sm btn-outline-success">
+                Ver todas mis notas
+              </a>
+            </div>
+          {% else %}
+            <p>Todavía no tienes notas registradas.</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-3 mt-1">
+    <div class="col-md-4">
+      <a href="{% url 'academics:student_offerings' %}" class="btn btn-outline-primary w-100">
+        📚 Matricularme en cursos
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="{% url 'academics:student_schedule' %}" class="btn btn-outline-secondary w-100">
+        🗓 Ver mi horario
+      </a>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-outline-warning w-100" disabled>
+        📄 Ver sílabos (próximamente)
+      </button>
+    </div>
+  </div>
+</div>
+{% endblock %}

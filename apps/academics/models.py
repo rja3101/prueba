@@ -6,11 +6,20 @@ class Course(models.Model):
     code = models.CharField(max_length=10, unique=True)
     name = models.CharField(max_length=120)
     credits = models.PositiveSmallIntegerField(default=3)
+
     teacher = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.PROTECT,
         related_name="courses",
         limit_choices_to={"role__name": "Docente"},
+        null=True,      # <- NUEVO
+        blank=True,     # <- NUEVO
+    )
+
+    semester = models.PositiveSmallIntegerField(
+        null=True,
+        blank=True,
+        help_text="Número de semestre (1, 2, 3, ...)."
     )
 
     class Meta:
@@ -109,3 +118,57 @@ class Grade(models.Model):
 
     def __str__(self):
         return f"{self.student.username} - {self.assessment.title}: {self.score}"
+# --- Asistencia ---
+class Attendance(models.Model):
+    course_group = models.ForeignKey(CourseGroup, on_delete=models.CASCADE, related_name="attendance_records")
+    student = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        limit_choices_to={"role__name": "Alumno"},
+    )
+    date = models.DateField(auto_now_add=True)
+    present = models.BooleanField(default=False)
+
+    class Meta:
+        verbose_name = "Asistencia"
+        verbose_name_plural = "Asistencias"
+        unique_together = ("course_group", "student", "date")
+
+    def __str__(self):
+        return f"{self.course_group} - {self.student.username} ({'Presente' if self.present else 'Ausente'})"
+
+
+# --- Ambientes (aulas y laboratorios) ---
+class Room(models.Model):
+    number = models.CharField(max_length=10, unique=True)
+    floor = models.PositiveSmallIntegerField(default=1)
+    is_lab = models.BooleanField(default=False)
+
+    class Meta:
+        verbose_name = "Ambiente/Aula"
+        verbose_name_plural = "Ambientes/Aulas"
+
+    def __str__(self):
+        return f"Aula {self.number} {'(Lab)' if self.is_lab else ''}"
+
+
+class RoomReservation(models.Model):
+    teacher = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        limit_choices_to={"role__name": "Docente"},
+        related_name="reservations",
+    )
+    room = models.ForeignKey(Room, on_delete=models.CASCADE)
+    date = models.DateField()
+    start_time = models.TimeField()
+    end_time = models.TimeField()
+    purpose = models.CharField(max_length=120, blank=True)
+
+    class Meta:
+        verbose_name = "Reserva de ambiente"
+        verbose_name_plural = "Reservas de ambientes"
+        unique_together = ("room", "date", "start_time", "end_time")
+
+    def __str__(self):
+        return f"{self.room.number} - {self.teacher.username} ({self.date})"
