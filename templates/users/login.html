@@ -62,12 +62,12 @@
   <div class="card card-login bg-dark text-light">
     <div class="card-header-custom">
       <h1>SISACAD</h1>
-      <p>Inicia sesión con tu usuario y contraseña</p>
+      <p>Inicia sesión con tu correo institucional y contraseña</p>
     </div>
     <div class="card-body p-4">
-      {% if form.errors %}
+      {% if form_error %}
         <div class="alert alert-danger text-small">
-          Usuario o contraseña incorrectos. Inténtalo nuevamente.
+          {{ form_error }}
         </div>
       {% endif %}
 
@@ -75,13 +75,13 @@
         {% csrf_token %}
 
         <div class="mb-3">
-          <label for="id_username" class="form-label text-small">Usuario</label>
+          <label for="id_username" class="form-label text-small">Correo institucional</label>
           <input
-            type="text"
+            type="email"
             name="username"
             class="form-control"
             id="id_username"
-            placeholder="correo institucional o usuario"
+            placeholder="Correo institucional"
             required
             autofocus
           >

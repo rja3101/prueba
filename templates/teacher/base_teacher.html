@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block navbar_links %}
+  <li class="nav-item">
+    <a class="nav-link {% if request.resolver_match.url_name == 'teacher_dashboard' %}active{% endif %}"
+       href="{% url 'academics:teacher_dashboard' %}">
+      Inicio
+    </a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link {% if request.resolver_match.url_name == 'teacher_dashboard' or request.resolver_match.url_name == 'teacher_course_detail' %}active{% endif %}"
+       href="{% url 'academics:teacher_dashboard' %}">
+      Mis grupos
+    </a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link {% if request.resolver_match.url_name == 'teacher_rooms' %}active{% endif %}"
+       href="{% url 'academics:teacher_rooms' %}">
+      Reserva de ambientes
+    </a>
+  </li>
+{% endblock navbar_links %}

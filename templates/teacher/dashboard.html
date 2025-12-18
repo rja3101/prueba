@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "teacher/base_teacher.html" %}
 {% block title %}Panel del Docente{% endblock %}
 {% block content %}
 <div class="container py-4">
@@ -6,56 +6,55 @@
     <i class="bi bi-person-workspace me-2"></i>Bienvenido, {{ request.user.first_name }}
   </h2>
 
-    <div class="row g-4 mb-4">
+  <div class="row g-4 mb-4">
     <!-- Tomar asistencia -->
     <div class="col-md-3">
-        <div class="card border-0 shadow-sm text-center h-100">
+      <div class="card border-0 shadow-sm text-center h-100">
         <div class="card-body">
-            <i class="bi bi-clipboard-check text-primary display-5 mb-3"></i>
-            <h5 class="fw-bold">Tomar asistencia</h5>
-            <p class="text-muted small">Registra asistencia de tus alumnos</p>
-            <a href="{% url 'academics:teacher_attendance' %}" class="btn btn-outline-primary btn-sm px-3">Entrar</a>
+          <i class="bi bi-clipboard-check text-primary display-5 mb-3"></i>
+          <h5 class="fw-bold">Tomar asistencia</h5>
+          <p class="text-muted small">Registra asistencia de tus alumnos</p>
+          <a href="{% url 'academics:teacher_attendance' %}" class="btn btn-outline-primary btn-sm px-3">Entrar</a>
         </div>
-        </div>
+      </div>
     </div>
 
     <!-- Notas y estadísticas -->
     <div class="col-md-3">
-        <div class="card border-0 shadow-sm text-center h-100">
+      <div class="card border-0 shadow-sm text-center h-100">
         <div class="card-body">
-            <i class="bi bi-bar-chart-line text-success display-5 mb-3"></i>
-            <h5 class="fw-bold">Notas y estadísticas</h5>
-            <p class="text-muted small">Ingresa y analiza calificaciones</p>
-            <a href="{% url 'academics:teacher_grades' %}" class="btn btn-outline-success btn-sm px-3">Entrar</a>
+          <i class="bi bi-bar-chart-line text-success display-5 mb-3"></i>
+          <h5 class="fw-bold">Notas y estadísticas</h5>
+          <p class="text-muted small">Ingresa y analiza calificaciones</p>
+          <a href="{% url 'academics:teacher_grades' %}" class="btn btn-outline-success btn-sm px-3">Entrar</a>
         </div>
-        </div>
+      </div>
     </div>
 
     <!-- Horario -->
     <div class="col-md-3">
-        <div class="card border-0 shadow-sm text-center h-100">
+      <div class="card border-0 shadow-sm text-center h-100">
         <div class="card-body">
-            <i class="bi bi-calendar-week text-info display-5 mb-3"></i>
-            <h5 class="fw-bold">Horario</h5>
-            <p class="text-muted small">Consulta tus cursos y secciones</p>
-            <a href="{% url 'academics:teacher_schedule' %}" class="btn btn-outline-info btn-sm px-3">Ver horario</a>
+          <i class="bi bi-calendar-week text-info display-5 mb-3"></i>
+          <h5 class="fw-bold">Horario</h5>
+          <p class="text-muted small">Consulta tus cursos y secciones</p>
+          <a href="{% url 'academics:teacher_schedule' %}" class="btn btn-outline-info btn-sm px-3">Ver horario</a>
         </div>
-        </div>
+      </div>
     </div>
 
     <!-- Reserva de ambientes -->
     <div class="col-md-3">
-        <div class="card border-0 shadow-sm text-center h-100">
+      <div class="card border-0 shadow-sm text-center h-100">
         <div class="card-body">
-            <i class="bi bi-building text-warning display-5 mb-3"></i>
-            <h5 class="fw-bold">Reserva de ambientes</h5>
-            <p class="text-muted small">Solicita aulas o laboratorios</p>
-            <a href="{% url 'academics:teacher_rooms' %}" class="btn btn-outline-warning btn-sm px-3">Reservar</a>
+          <i class="bi bi-building text-warning display-5 mb-3"></i>
+          <h5 class="fw-bold">Reserva de ambientes</h5>
+          <p class="text-muted small">Solicita aulas o laboratorios</p>
+          <a href="{% url 'academics:teacher_rooms' %}" class="btn btn-outline-warning btn-sm px-3">Reservar</a>
         </div>
-        </div>
+      </div>
     </div>
-    </div>
-
+  </div>
 
   <h4 class="fw-bold mb-3">Mis grupos</h4>
   {% if groups %}
@@ -63,7 +62,10 @@
       <table class="table table-striped align-middle">
         <thead class="table-light">
           <tr>
-            <th>Código</th><th>Curso</th><th>Sección</th>
+            <th>Código</th>
+            <th>Curso</th>
+            <th>Sección</th>
+            <th style="width: 150px;">Acciones</th>
           </tr>
         </thead>
         <tbody>
@@ -72,6 +74,12 @@
             <td>{{ g.course.code }}</td>
             <td>{{ g.course.name }}</td>
             <td>{{ g.section }}</td>
+            <td>
+              <a href="{% url 'academics:teacher_course_detail' g.id %}"
+                 class="btn btn-outline-primary btn-sm">
+                Ver curso
+              </a>
+            </td>
           </tr>
           {% endfor %}
         </tbody>

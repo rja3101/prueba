@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="mb-3">
+  {{ group.course.code }} - {{ group.course.name }}
+  (Sección {{ group.section }})
+</h1>
+
+{% if group.course.teacher %}
+  <p class="text-muted">
+    Docente: {{ group.course.teacher.get_full_name|default:group.course.teacher.username }}
+  </p>
+{% endif %}
+
+<hr>
+
+<!-- ===================== MATERIAL DEL CURSO ===================== -->
+<h2 class="h4 mt-3">Materiales del curso</h2>
+
+{% if materials %}
+  <ul class="list-group mb-4">
+    {% for m in materials %}
+      <li class="list-group-item">
+        <strong>{{ m.title }}</strong><br>
+        {% if m.description %}
+          <small>{{ m.description }}</small><br>
+        {% endif %}
+        {% if m.file %}
+          <a href="{{ m.file.url }}" target="_blank">Descargar archivo</a><br>
+        {% endif %}
+        {% if m.link %}
+          <a href="{{ m.link }}" target="_blank">Ver enlace</a><br>
+        {% endif %}
+        {% if m.created_at %}
+          <small class="text-muted">
+            Publicado: {{ m.created_at|date:"d/m/Y H:i" }}
+          </small>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p class="text-muted">Aún no hay materiales publicados para este curso.</p>
+{% endif %}
+
+<!-- ===================== PLAN DE 19 SEMANAS ===================== -->
+<h2 class="h4 mt-4">Plan de semanas (Programación Competitiva)</h2>
+
+{% if topics %}
+  <div class="table-responsive mb-4">
+    <table class="table table-striped align-middle">
+      <thead>
+        <tr>
+          <th>Semana</th>
+          <th>Tema</th>
+          <th>Descripción</th>
+          <th>Tarea</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for t in topics %}
+          <tr>
+            <td>{{ t.week_number }}</td>
+            <td>{{ t.title }}</td>
+            <td style="max-width: 400px;">
+              {{ t.description }}
+            </td>
+            <td style="max-width: 400px;">
+              {% with assignments=t.assignments.all %}
+                {% if assignments %}
+                  {% for a in assignments %}
+                    <div class="mb-2">
+                      <strong>{{ a.title }}</strong><br>
+                      {% if a.description %}
+                        <small>{{ a.description }}</small><br>
+                      {% endif %}
+
+                      {% if a.resource_file %}
+                        <a href="{{ a.resource_file.url }}" target="_blank">
+                          Archivo del docente
+                        </a><br>
+                      {% endif %}
+                      {% if a.resource_link %}
+                        <a href="{{ a.resource_link }}" target="_blank">
+                          Enlace externo
+                        </a><br>
+                      {% endif %}
+
+                      <a
+                        href="{% url 'academics:student_assignment_view' a.id %}"
+                        class="btn btn-sm btn-primary mt-1"
+                      >
+                        Ver / entregar
+                      </a>
+                    </div>
+                  {% endfor %}
+                {% else %}
+                  <span class="text-muted">Sin tarea registrada para esta semana.</span>
+                {% endif %}
+              {% endwith %}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% else %}
+  <p class="text-muted">
+    Aún no se han configurado los temas para este grupo.
+  </p>
+{% endif %}
+
+<!-- ===================== NOTAS (EXÁMENES / EVALUACIONES) ===================== -->
+<h2 class="h4 mt-4">Notas del curso (evaluaciones)</h2>
+
+{% if grades %}
+  <div class="table-responsive">
+    <table class="table table-bordered align-middle">
+      <thead>
+        <tr>
+          <th>Evaluación</th>
+          <th>Peso</th>
+          <th>Nota</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for g in grades %}
+          <tr>
+            <td>{{ g.assessment.name }}</td>
+            <td>{{ g.assessment.weight }}%</td>
+            <td>{{ g.score }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% else %}
+  <p class="text-muted">Todavía no hay notas registradas para este curso.</p>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="mb-2">{{ assignment.title }}</h1>
+
+<p class="text-muted mb-1">
+  {{ group.course.code }} - {{ group.course.name }} (Sección {{ group.section }})
+</p>
+{% if group.course.teacher %}
+  <p class="text-muted">
+    Docente: {{ group.course.teacher.get_full_name|default:group.course.teacher.username }}
+  </p>
+{% endif %}
+
+<hr>
+
+<h2 class="h5 mt-3">Descripción de la tarea</h2>
+<p>{{ assignment.description }}</p>
+
+{% if assignment.resource_file or assignment.resource_link %}
+  <h3 class="h6 mt-3">Material del docente</h3>
+  <ul>
+    {% if assignment.resource_file %}
+      <li>
+        <a href="{{ assignment.resource_file.url }}" target="_blank">
+          Descargar archivo del docente
+        </a>
+      </li>
+    {% endif %}
+    {% if assignment.resource_link %}
+      <li>
+        <a href="{{ assignment.resource_link }}" target="_blank">
+          Enlace externo
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+{% endif %}
+
+<hr>
+
+<h2 class="h5 mt-3">Tu entrega</h2>
+
+{% if submission %}
+  <div class="alert alert-info">
+    <p><strong>Última entrega:</strong></p>
+    <p>
+      <a href="{{ submission.file.url }}" target="_blank">
+        Ver archivo subido
+      </a>
+    </p>
+    <p>Fecha de entrega: {{ submission.submitted_at|date:"d/m/Y H:i" }}</p>
+
+    {% if submission.grade %}
+      <p><strong>Nota:</strong> {{ submission.grade }}</p>
+    {% else %}
+      <p class="text-muted">Aún no ha sido calificada.</p>
+    {% endif %}
+
+    {% if submission.feedback %}
+      <p><strong>Comentario del docente:</strong><br>
+        {{ submission.feedback }}
+      </p>
+    {% endif %}
+  </div>
+{% else %}
+  <p class="text-muted">Todavía no has subido ninguna entrega.</p>
+{% endif %}
+
+<hr>
+
+<h2 class="h5 mt-3">Subir / reemplazar entrega</h2>
+
+<form method="post" enctype="multipart/form-data" class="mt-2">
+  {% csrf_token %}
+  <div class="mb-3">
+    <label class="form-label">Archivo de la tarea</label>
+    <input type="file" name="file" class="form-control" required>
+  </div>
+  <button type="submit" class="btn btn-primary">
+    Subir
+  </button>
+</form>
+
+<a href="{% url 'academics:student_course_detail' group.id %}" class="btn btn-link mt-3">
+  ← Volver al curso
+</a>
+
+{% endblock %}

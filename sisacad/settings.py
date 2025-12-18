@@ -17,3 +17,7 @@ MIDDLEWARE += [
 ]
 
 TEMPLATES[0]["DIRS"] = [BASE_DIR / "templates"]
+
+AUTHENTICATION_BACKENDS = [
+    "apps.users.backends.EmailOrUsernameBackend",
+]

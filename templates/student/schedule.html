@@ -1,35 +1,40 @@
 {% extends "base.html" %}
-{% block title %}Mi Horario{% endblock %}
-{% block content %}
-<div class="container py-4">
-  <h2 class="fw-bold mb-4 text-info">
-    <i class="bi bi-calendar-week"></i> Mi horario
-  </h2>
 
-  {% if schedule %}
-    <div class="table-responsive shadow-sm">
-      <table class="table table-bordered align-middle">
-        <thead class="table-info">
-          <tr>
-            <th>Día</th><th>Hora</th><th>Curso</th><th>Aula</th>
-          </tr>
-        </thead>
-        <tbody>
-        {% for s in schedule %}
+{% block title %}Mi horario - SISACAD{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h1 class="mb-3">Mi horario</h1>
+  <p class="text-muted">
+    Horario de tu semana según tu matrícula
+  </p>
+
+  <div class="table-responsive">
+    <table class="table table-bordered align-middle text-center">
+      <thead class="table-primary">
         <tr>
-          <td>{{ s.day }}</td>
-          <td>{{ s.start_time }} - {{ s.end_time }}</td>
-          <td>{{ s.course_group.course.name }}</td>
-          <td>{{ s.room }}</td>
+          <th style="width: 110px;">Hora</th>
+          {% for day in weekdays %}
+            <th>{{ day }}</th>
+          {% endfor %}
         </tr>
+      </thead>
+      <tbody>
+        {% for slot, row in schedule_rows %}
+          <tr>
+            <th scope="row">{{ slot }}</th>
+            {% for cell in row %}
+              <td style="min-width: 160px;">
+                {{ cell|safe }}
+              </td>
+            {% endfor %}
+          </tr>
         {% endfor %}
-        </tbody>
-      </table>
-    </div>
-  {% else %}
-    <div class="alert alert-secondary text-center shadow-sm">
-      <i class="bi bi-calendar2-x"></i> Tu horario aparecerá aquí próximamente.
-    </div>
-  {% endif %}
+      </tbody>
+    </table>
+  </div>
+
+  <p class="text-muted mt-2">
+  </p>
 </div>
 {% endblock %}

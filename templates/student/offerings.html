@@ -1,44 +1,75 @@
 {% extends "base.html" %}
-{% block title %}Matricularme{% endblock %}
-{% block content %}
-<div class="container py-4">
-  <h2 class="fw-bold mb-4 text-warning">
-    <i class="bi bi-mortarboard"></i> Cursos disponibles para matrícula
-  </h2>
 
-  {% if groups %}
-  <div class="table-responsive shadow-sm">
-    <table class="table table-hover align-middle">
-      <thead class="table-warning">
-        <tr>
-          <th>Código</th>
-          <th>Curso</th>
-          <th>Docente</th>
-          <th>Créditos</th>
-          <th>Acción</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for g in groups %}
-        <tr>
-          <td>{{ g.course.code }}</td>
-          <td class="fw-semibold">{{ g.course.name }}</td>
-          <td>{{ g.teacher.first_name }} {{ g.teacher.last_name }}</td>
-          <td>{{ g.course.credits }}</td>
-          <td>
-            <a href="{% url 'academics:student_enroll' g.id %}" class="btn btn-sm btn-outline-warning">
-              <i class="bi bi-plus-circle"></i> Matricular
-            </a>
-          </td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <div>
+    <h1 class="mb-1">Cursos disponibles para matrícula</h1>
+    <p class="text-muted mb-0">
+      Selecciona los cursos teóricos en los que deseas inscribirte este semestre.
+    </p>
   </div>
-  {% else %}
-  <div class="alert alert-info text-center shadow-sm">
-    <i class="bi bi-info-circle"></i> No hay cursos disponibles para matricularte.
+</div>
+
+<div class="card shadow-sm border-0">
+  <div class="card-body">
+    {% if groups %}
+      <div class="table-responsive">
+        <table class="table align-middle">
+          <thead class="table-light">
+            <tr>
+              <th style="width: 120px;">Código</th>
+              <th>Nombre</th>
+              <th style="width: 90px;">Sección</th>
+              <th>Docente</th>
+              <th style="width: 110px;" class="text-center">Cupos</th>
+              <th style="width: 140px;" class="text-center">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for g in groups %}
+              <tr>
+                <td class="fw-semibold">{{ g.course.code }}</td>
+                <td>
+                  {{ g.course.name }}
+                  <div class="small text-muted">
+                    ID grupo: {{ g.id }}
+                  </div>
+                </td>
+                <td class="fw-semibold">{{ g.section }}</td>
+                <td>
+                  {% if g.course.teacher %}
+                    {{ g.course.teacher.get_full_name|default:g.course.teacher.username }}
+                  {% else %}
+                    <span class="text-muted">Por asignar</span>
+                  {% endif %}
+                </td>
+                <td class="text-center">
+                  {{ g.current_enrollment|default:0 }} / {{ g.capacity|default:30 }}
+                </td>
+                <td class="text-center">
+                  {% if g.id in enrolled_group_ids %}
+                    <span class="badge text-bg-success px-3 py-2">
+                      Matriculado
+                    </span>
+                  {% else %}
+                    <form action="{% url 'academics:student_enroll' g.id %}" method="post" class="d-inline">
+                      {% csrf_token %}
+                      <button type="submit" class="btn btn-primary btn-sm px-3">
+                        Matrícula
+                      </button>
+                    </form>
+                  {% endif %}
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% else %}
+      <p class="text-muted mb-0">
+        No hay cursos disponibles para matrícula en este momento.
+      </p>
+    {% endif %}
   </div>
-  {% endif %}
 </div>
 {% endblock %}

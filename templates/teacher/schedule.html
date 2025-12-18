@@ -1,31 +1,45 @@
-{% extends "base.html" %}
-{% block title %}Horario del docente{% endblock %}
-{% block content %}
-<div class="container py-4">
-  <h3 class="fw-bold text-info mb-4">
-    <i class="bi bi-calendar-week me-2"></i>Mi horario
-  </h3>
+{% extends "teacher/base_teacher.html" %}
 
-  {% if groups %}
-  <div class="table-responsive shadow-sm rounded">
-    <table class="table table-bordered align-middle">
-      <thead class="table-info">
-        <tr><th>Código</th><th>Curso</th><th>Sección</th></tr>
-      </thead>
-      <tbody>
-        {% for g in groups %}
-        <tr>
-          <td>{{ g.course.code }}</td>
-          <td>{{ g.course.name }}</td>
-          <td>{{ g.section }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+{% block title %}Horario - Docente{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h2 class="fw-bold mb-4" style="color:#06b6d4;">Mi horario</h2>
+
+  <div class="card shadow-sm">
+    <div class="card-body">
+
+      {% if schedule_rows %}
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle text-center">
+          <thead class="table-info">
+            <tr>
+              <th style="min-width:140px;">Hora</th>
+              {% for day in weekdays %}
+                <th style="min-width:170px;">{{ day }}</th>
+              {% endfor %}
+            </tr>
+          </thead>
+
+          <tbody>
+            {% for slot, cells in schedule_rows %}
+            <tr>
+              <th class="table-light text-start">{{ slot }}</th>
+              {% for cell in cells %}
+                <td class="p-1">{{ cell|safe }}</td>
+              {% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% else %}
+        <div class="alert alert-warning mb-0">
+          No hay datos de horario para mostrar.
+        </div>
+      {% endif %}
+
+    </div>
   </div>
-  <p class="text-muted mt-3 small">Próximamente podrás ver días y horas específicas de tus clases.</p>
-  {% else %}
-  <div class="alert alert-secondary">No tienes grupos asignados.</div>
-  {% endif %}
 </div>
 {% endblock %}

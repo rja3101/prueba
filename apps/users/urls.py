@@ -1,4 +1,3 @@
-# apps/users/urls.py
 from django.urls import path
 from .views import RoleBasedLoginView, CustomLogoutView
 

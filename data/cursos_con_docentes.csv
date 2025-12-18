@@ -1,0 +1,69 @@
+code,name,semester,credits,teacher_username
+1701101,Razonamiento Logico Matematico,1,3,docente1
+1701102,Metodologia Del Trabajo Intelectual Universitario,1,2,evillar@unsa.edu.pe
+1701104,Arte Computacional,1,3,esuarezlo@unsa.edu.pe
+1701105,Ingles Tecnico Profesional I,1,3,gcahuanam@unsa.edu.pe
+1701106,Fundamentos De Computacion,1,4,jveras@unsa.edu.pe
+1701107,Estructuras Discretas I,1,4,mquispecr@unsa.edu.pe
+1701114,Liderazgo Y Oratoria,1,2,docente1
+1701208,Estructuras Discretas II,2,5,wramosl@unsa.edu.pe
+1701209,Ciencia De La Computacion I,2,5,esarmientoc@unsa.edu.pe
+1701210,Calculo En Una Variable,2,5,rlinaresd@unsa.edu.pe
+1701212,Ingles Tecnico Profesional II,2,3,gcahuanam@unsa.edu.pe
+1701215,Comunicacion Integral,2,3,mzapanahua@unsa.edu.pe
+1701216,Realidad Nacional,2,2,elazoal@unsa.edu.pe
+1702117,Arquitectura De Computadores,3,3,prodriguezg@unsa.edu.pe
+1702118,Ciencias De La Computacion II,3,5,amamania@unsa.edu.pe
+1702119,Desarrollo Basado En Plataformas,3,3,ehinojosac@unsa.edu.pe
+1702120,Trabajo Interdisciplinar I,3,2,rfloresq@unsa.edu.pe
+1702121,Calculo En Varias Variables,3,5,amaytas@unsa.edu.pe
+1702122,Ingles Tecnico Profesional III,3,3,mnuneznu@unsa.edu.pe
+1702123,Ciudadania E Interculturalidad,3,2,ycereceda@unsa.edu.pe
+1702224,Algoritmos Y Estructuras De Datos,4,5,pmaldonado@unsa.edu.pe
+1702225,Teoria De La Computacion,4,4,amamania@unsa.edu.pe
+1702226,Base De Datos I,4,4,ehinojosac@unsa.edu.pe
+1702227,Algebra Lineal Numerica,4,4,rmestasc@unsa.edu.pe
+1702228,Estadistica Y Probabilidades,4,4,aquispem@unsa.edu.pe
+1702229,Ecologia Y Conservacion Ambiental,4,2,rzamalloa@unsa.edu.pe
+1703130,Base De Datos II,5,3,esarmientoc@unsa.edu.pe
+1703131,Analisis Y Diseno De Algoritmos,5,4,yvillana@unsa.edu.pe
+1703132,Ingenieria De Software I,5,3,esarmientoc@unsa.edu.pe
+1703133,Compiladores,5,3,lfuerte@unsa.edu.pe
+1703134,Analisis Exploratorio De Datos Espaciales,5,4,ycereceda@unsa.edu.pe
+1703135,Ecuaciones Diferenciales,5,4,eroqueroj@unsa.edu.pe
+1703236,Programacion Competitiva,6,3,rcardenast@unsa.edu.pe
+1703237,Ingenieria De Software II,6,4,esarmientoc@unsa.edu.pe
+1703238,Estructuras De Datos Avanzados,6,4,yyarir@unsa.edu.pe
+1703239,Sistemas Operativos,6,4,rfloresq@unsa.edu.pe
+1703240,Trabajo Interdisciplinar II,6,3,yyarir@unsa.edu.pe
+1703241,Matematica Aplicada A La Computacion,6,4,amoralesmo@unsa.edu.pe
+1704142,Investigacion En Ciencias De La Computacion,7,3,wramosl@unsa.edu.pe
+1704143,Desarrollo De Software Empresarial,7,4,esarmientoc@unsa.edu.pe
+1704144,Redes Y Comunicacion,7,3,ldelgado@unsa.edu.pe
+1704145,Ingenieria De Software III,7,3,rcardenast@unsa.edu.pe
+1704146,Computacion Grafica,7,4,rcardenast@unsa.edu.pe
+1704147,Inteligencia Artificial,7,4,yvelazcop@unsa.edu.pe
+1704248,Interaccion Humano Computador,8,3,acuadrosv@unsa.edu.pe
+1704249,Proyecto De Final De Carrera I,8,3,rfloresq@unsa.edu.pe
+1704250,Computacion Paralela Y Distribuida,8,4,amamania@unsa.edu.pe
+1704251,Seguridad En Computacion,8,3,ldelgado@unsa.edu.pe
+1704252,Formacion De Empresas De Base Tecnologica I,8,3,jzuniga@unsa.edu.pe
+1704253,Relaciones Humanas,8,2,elazoal@unsa.edu.pe
+1704254,Fisica Computacional (E),8,3,wcabana@unsa.edu.pe
+1704255,Topicos En Ingenieria De Software (E),8,3,esarmientoc@unsa.edu.pe
+1705156,Proyecto De Final De Carrera II,9,3,jgutierrezc@unsa.edu.pe
+1705157,Big Data,9,3,amamania@unsa.edu.pe
+1705158,Etica General Y Profesional,9,2,yvelazcop@unsa.edu.pe
+1705159,Formacion De Empresas De Base Tecnologica II,9,2,jzuniga@unsa.edu.pe
+1705160,Ingles Tecnico Profesional IV,9,3,mnuneznu@unsa.edu.pe
+1705161,Topicos En Ciencia De Datos (E),9,4,acuadrosv@unsa.edu.pe
+1705162,Topicos En Inteligencia Artificial (E),9,4,jgutierrezc@unsa.edu.pe
+1705163,Topicos En Computacion Grafica (E),9,4,yyarir@unsa.edu.pe
+1705164,Bioinformatica (E),9,4,yyarir@unsa.edu.pe
+1705265,Cloud Computing,10,4,amamania@unsa.edu.pe
+1705266,Proyecto De Final De Carrera III,10,6,jgutierrezc@unsa.edu.pe
+1705267,Trabajo Interdisciplinar III,10,2,yyarir@unsa.edu.pe
+1705268,Internet De Las Cosas,10,3,pmaldonado@unsa.edu.pe
+1705269,Robotica (E),10,4,jgutierrezc@unsa.edu.pe
+1705270,Topicos En Ciberseguridad (E),10,4,rcardenast@unsa.edu.pe
+1705271,Practicas Pre Profesionales,10,2,wramosl@unsa.edu.pe

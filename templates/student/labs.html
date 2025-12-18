@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}Laboratorios - SISACAD{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h1 class="mb-3">Laboratorios</h1>
+  <p class="text-muted">
+    Elige un laboratorio por curso. Máximo <strong>1 laboratorio por curso</strong>,
+    sin cruces de horario y con cupos limitados.
+  </p>
+
+  <div class="table-responsive">
+    <table class="table table-bordered align-middle text-center">
+      <thead class="table-primary">
+        <tr>
+          <th>Curso</th>
+          <th>Código</th>
+          <th>Opción</th>
+          <th>Día</th>
+          <th>Horario</th>
+          <th>Aula</th>
+          <th>Cupos</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for lab in labs %}
+          <tr
+            {% if lab.id in my_lab_ids %}
+              class="table-success"
+            {% elif lab.course_id in courses_with_lab_selected %}
+              class="table-secondary"
+            {% endif %}
+          >
+            <td class="text-start">
+              <strong>{{ lab.course.name }}</strong>
+            </td>
+            <td>{{ lab.course.code }}</td>
+            <td>{{ lab.code }}</td>
+            <td>{{ lab.day }}</td>
+            <td>{{ lab.slot }}</td>
+            <td>{{ lab.classroom }}</td>
+            <td>
+              {{ lab.seats_left }} / {{ lab.capacity }}
+            </td>
+            <td>
+              {% if lab.id in my_lab_ids %}
+                <!-- YA inscrito en este lab: botón DESINSCRIBIR -->
+                <form method="post" action="{% url 'academics:student_lab_unenroll' lab.id %}">
+                  {% csrf_token %}
+                  <button type="submit" class="btn btn-outline-danger btn-sm">
+                    Desinscribirme
+                  </button>
+                </form>
+
+              {% elif lab.course_id in courses_with_lab_selected %}
+                <!-- Ya tiene otro lab del mismo curso -->
+                <span class="badge bg-secondary">
+                  Ya tienes un laboratorio de este curso
+                </span>
+
+              {% elif lab.seats_left <= 0 %}
+                <!-- Sin cupos -->
+                <span class="badge bg-danger">Sin cupos</span>
+
+              {% else %}
+                <!-- Todo OK: puede inscribirse -->
+                <form method="post" action="{% url 'academics:student_lab_enroll' lab.id %}">
+                  {% csrf_token %}
+                  <button type="submit" class="btn btn-primary btn-sm">
+                    Inscribirme
+                  </button>
+                </form>
+              {% endif %}
+            </td>
+          </tr>
+        {% empty %}
+          <tr>
+            <td colspan="8" class="text-muted">
+              No hay laboratorios disponibles para tus cursos matriculados.
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

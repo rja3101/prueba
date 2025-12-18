@@ -430,3 +430,18 @@ if model_exists("EnrollmentAttempt"):
         def get_autocomplete_fields(self, request):
             return safe_list_display(m.EnrollmentAttempt, ("student", "term"))
     admin.site.register(m.EnrollmentAttempt, EnrollmentAttemptAdmin)
+
+from django.contrib import admin
+from .models import AssignmentSubmission  # más los otros modelos que ya registras
+
+@admin.register(AssignmentSubmission)
+class AssignmentSubmissionAdmin(admin.ModelAdmin):
+    list_display = ("assignment", "student", "submitted_at", "grade")
+    list_filter = ("assignment",)
+    search_fields = (
+        "assignment__title",
+        "student__username",
+        "student__first_name",
+        "student__last_name",
+    )
+

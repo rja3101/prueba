@@ -37,24 +37,64 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="{% url 'academics:student_dashboard' %}">SISACAD</a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="{% url 'academics:student_dashboard' %}">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="{% url 'academics:student_courses' %}">Mis cursos</a></li>
-          <li class="nav-item"><a class="nav-link" href="{% url 'academics:student_grades' %}">Mis notas</a></li>
-          <li class="nav-item"><a class="nav-link" href="{% url 'academics:student_offerings' %}">Matricularme</a></li>
-          <li class="nav-item"><a class="nav-link" href="{% url 'academics:student_schedule' %}">Horario</a></li>
+          {# 🔹 ESTE BLOQUE SE PUEDE SOBRESCRIBIR EN PLANTILLAS HIJAS #}
+          {% block navbar_links %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'academics:student_dashboard' %}">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'academics:student_courses' %}">Mis cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'academics:student_grades' %}">Mis notas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'academics:student_offerings' %}">Matricularme</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'academics:student_schedule' %}">Horario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if request.resolver_match.url_name == 'student_lab_offerings' %}active{% endif %}"
+               href="{% url 'academics:student_lab_offerings' %}">
+              Laboratorios
+            </a>
+          </li>
+          {% endblock %}
         </ul>
+
         <span class="navbar-text text-light me-3">
           {{ request.user.first_name }}
         </span>
-        <a href="{% url 'users:logout' %}" class="btn btn-outline-light btn-sm">Salir</a>
+
+        <!-- Logout por POST (Django 5 no permite GET para logout) -->
+        <form action="{% url 'users:logout' %}" method="post" class="d-inline">
+          {% csrf_token %}
+          <button type="submit" class="btn btn-outline-light btn-sm">
+            Salir
+          </button>
+        </form>
       </div>
     </div>
   </nav>
+
+  {% if messages %}
+  <div class="container mt-2">
+    {% for message in messages %}
+      <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+      </div>
+    {% endfor %}
+  </div>
+  {% endif %}
 
   <main class="container mt-4">
     {% block content %}
